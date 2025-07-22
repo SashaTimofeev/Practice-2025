@@ -1,0 +1,233 @@
+2025-07-22 15:31:12,871 - utils.logger - INFO - Логирование инициализировано. Уровень: INFO. Файл: logs\translation_tool.log
+2025-07-22 15:31:37,282 - utils.logger - INFO - Логирование инициализировано. Уровень: INFO. Файл: logs\translation_tool.log
+2025-07-22 15:31:38,932 - translation_manager - INFO - Создана резервная копия: backups\for_translation_indico_core-messages-all_ru_RU-2_20250722_153138.po
+2025-07-22 15:33:13,179 - translation_manager - INFO - Файл успешно сохранен: for_translation_indico_core-messages-all_ru_RU-2_translated.po
+2025-07-22 15:33:38,749 - translation_manager - INFO - Файл успешно сохранен: for_translation_indico_core-messages-all_ru_RU-2_translated.po
+2025-07-22 15:33:58,141 - translator - WARNING - Попытка 1 не удалась: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 3
+}
+]
+2025-07-22 15:34:00,374 - translator - WARNING - Попытка 2 не удалась: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 1
+}
+]
+2025-07-22 15:34:04,580 - translator - WARNING - Попытка 3 не удалась: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 57
+}
+]
+2025-07-22 15:34:04,581 - translator - ERROR - Не удалось перевести текст после 3 попыток: Invalid file name: {files}
+2025-07-22 15:34:04,763 - translator - WARNING - Попытка 1 не удалась: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 57
+}
+]
+2025-07-22 15:34:06,975 - translator - WARNING - Попытка 2 не удалась: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 54
+}
+]
+2025-07-22 15:34:11,650 - translator - WARNING - Попытка 3 не удалась: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 50
+}
+]
+2025-07-22 15:34:11,651 - translator - ERROR - Не удалось перевести текст после 3 попыток: Required file type missing: {types}
+2025-07-22 15:34:11,836 - translator - WARNING - Попытка 1 не удалась: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 49
+}
+]
+2025-07-22 15:34:14,022 - translator - WARNING - Попытка 2 не удалась: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 47
+}
+]
+2025-07-22 15:34:18,251 - translator - WARNING - Попытка 3 не удалась: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 43
+}
+]
+2025-07-22 15:34:18,251 - translator - ERROR - Не удалось перевести текст после 3 попыток: You cannot accept an editable that does not contain any publishable files.
+2025-07-22 15:34:18,435 - translator - WARNING - Попытка 1 не удалась: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-1.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 43
+}
+]
+2025-07-22 15:34:21,663 - __main__ - INFO - 
+Работа программы прервана пользователем
+2025-07-22 15:48:39,725 - utils.logger - INFO - Логирование инициализировано. Уровень: INFO. Файл: logs\translation_tool.log
+2025-07-22 15:48:46,825 - translation_manager - INFO - Создана резервная копия: backups\for_translation_indico_core-messages-all_ru_RU-2_20250722_154846.po
+2025-07-22 15:51:47,067 - translation_manager - INFO - Файл успешно сохранен: for_translation_indico_core-messages-all_ru_RU-2_translated.po
+2025-07-22 15:52:01,957 - translation_manager - INFO - Файл успешно сохранен: for_translation_indico_core-messages-all_ru_RU-2_translated.po
+2025-07-22 16:31:35,108 - utils.logger - INFO - Логирование инициализировано. Уровень: INFO. Файл: logs\translation_tool.log
+2025-07-22 16:31:46,904 - translation_manager - INFO - Создана резервная копия: backups\for_translation_indico_core-messages-all_ru_RU-2_20250722_163146.po
+2025-07-22 16:32:44,115 - translation_manager - INFO - Файл успешно сохранен: for_translation_indico_core-messages-all_ru_RU-2_translated.po
+2025-07-22 16:38:51,169 - utils.logger - INFO - Логирование инициализировано. Уровень: INFO. Файл: logs\translation_tool.log
+2025-07-22 16:38:51,179 - translation_manager - INFO - Создана резервная копия: backups\for_translation_indico_core-messages-all_ru_RU-2_20250722_163851.po
+2025-07-22 16:41:45,676 - translation_manager - INFO - Создана резервная копия: backups\for_translation_indico_core-messages-all_ru_RU-2_20250722_164145.po
+2025-07-22 16:42:19,610 - translation_manager - INFO - Создана резервная копия: backups\for_translation_indico_core-messages-all_ru_RU-2_20250722_164219.po
+2025-07-22 16:42:22,499 - __main__ - INFO - 
+Работа программы прервана пользователем
