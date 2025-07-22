@@ -79,7 +79,7 @@ class TranslationManager:
         print()
 
     def translate_entries(self, po, entries_to_translate, batch_size=None):
-        """Переводим непереведенные записи"""
+        """Переводим непереведенные записи пакетами"""
         if not entries_to_translate:
             print("Нет строк для перевода!")
             return 0
@@ -89,30 +89,45 @@ class TranslationManager:
 
         print(f"\nНачинаем перевод {len(entries_to_translate)} строк...")
         
+        # Фильтруем пустые строки и сохраняем оригинальные значения
+        entries_to_process = []
+        for entry in entries_to_translate:
+            if entry.msgid.strip():
+                if not hasattr(entry, 'original_msgstr'):
+                    entry.original_msgstr = entry.msgstr
+                entries_to_process.append(entry)
+        
+        if not entries_to_process:
+            print("Нет валидных строк для перевода!")
+            return 0
+            
         translated_count = 0
-        with tqdm(total=len(entries_to_translate), desc="Перевод строк") as pbar:
-            for entry in entries_to_translate:
-                try:
-                    # Пропускаем пустые строки
-                    if not entry.msgid.strip():
-                        continue
-                        
-                    # Сохраняем оригинальное значение, если это первое изменение
-                    if not hasattr(entry, 'original_msgstr'):
-                        entry.original_msgstr = entry.msgstr
-                        
-                    # Пытаемся перевести
-                    translated = self.translator.translate(entry.msgid)
-                    if translated:
-                        entry.msgstr = translated
-                        translated_count += 1
-                        
-                except Exception as e:
-                    logger.error(f"Ошибка при переводе строки '{entry.msgid}': {str(e)}")
+        batch_size = self.translator.BATCH_SIZE
+        total_entries = len(entries_to_process)
+        
+        with tqdm(total=total_entries, desc="Перевод строк") as pbar:
+            for i in range(0, len(entries_to_process), batch_size):
+                # Получаем пакет записей для перевода
+                batch_entries = entries_to_process[i:i + batch_size]
+                batch_texts = [entry.msgid for entry in batch_entries]
                 
-                pbar.update(1)
+                try:
+                    # Переводим пакет
+                    translations = self.translator.translate_batch(batch_texts)
+                    
+                    # Обновляем переводы
+                    for entry, translation in zip(batch_entries, translations):
+                        if translation is not None:
+                            entry.msgstr = translation
+                            translated_count += 1
+                            
+                except Exception as e:
+                    logger.error(f"Ошибка при пакетном переводе: {str(e)}")
+                
+                # Обновляем прогресс-бар
+                pbar.update(len(batch_entries))
                 pbar.set_postfix({
-                    'переведено': f"{translated_count}/{len(entries_to_translate)}",
+                    'переведено': f"{translated_count}/{total_entries}",
                     'прогресс': f"{pbar.n/pbar.total*100:.1f}%"
                 })
                 
