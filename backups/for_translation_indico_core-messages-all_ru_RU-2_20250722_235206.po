@@ -4079,9 +4079,9 @@ msgstr ""
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "Cancel booking"
 msgid_plural "Cancel all occurrences"
-msgstr[0] "Отменить бронирование"
-msgstr[1] "Отменить все повторения"
-msgstr[2] "Отменить все повторения"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
@@ -4089,23 +4089,18 @@ msgid "Are you sure you want to cancel this booking?"
 msgid_plural ""
 "Are you sure you want to cancel this booking? This will cancel {count} "
 "upcoming occurrences."
-msgstr[0] "Вы уверены, что хотите отменить это бронирование?"
+msgstr[0] ""
 msgstr[1] ""
-"Вы уверены, что хотите отменить это бронирование? Это отменит {count} "
-"предстоящих повторений."
 msgstr[2] ""
-"Вы уверены, что хотите отменить это бронирование? Это отменит {count} "
-"предстоящих повторений."
 msgstr[3] ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "Single occurrences can be cancelled via the timeline view."
 msgstr ""
-"Отдельные повторения можно отменить через представление временной шкалы."
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "View Timeline"
-msgstr "Просмотр временной шкалы"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "Accept booking"
@@ -4113,26 +4108,26 @@ msgstr "Принять бронирование  "
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "Booking Details"
-msgstr "Детали бронирования"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "Booking link copied"
-msgstr "Ссылка на бронирование скопирована"
+msgstr ""
 
 #: indico/modules/events/templates/emails/event_creation.txt
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 #: indico/modules/rb/client/js/common/bookings/BookingEditCalendar.jsx
 msgid "Occurrences"
-msgstr "Повторения"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingEdit.jsx
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "Reason must be at least 3 characters"
-msgstr "Причина должна содержать не менее 3 символов"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingEdit.jsx
 msgid "Edit a booking"
-msgstr "Редактировать бронирование"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingEdit.jsx
 msgid "This booking has already started."
@@ -4140,24 +4135,21 @@ msgstr "Бронирование уже началось."
 
 #: indico/modules/rb/client/js/common/bookings/BookingEdit.jsx
 msgid "Conflicts with new booking"
-msgstr "Конфликты с новым бронированием"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingEdit.jsx
 msgid "Your new booking conflicts with another one."
 msgid_plural ""
 "{count} occurrences of your booking are unavailable due to conflicts."
-msgstr[0] "Ваше новое бронирование конфликтует с другим."
+msgstr[0] ""
 msgstr[1] ""
-"{count} повторения вашего бронирования недоступны из-за конфликтов."
 msgstr[2] ""
-"{count} повторений вашего бронирования недоступны из-за конфликтов."
 msgstr[3] ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingEdit.jsx
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "I understand, please skip any days with conflicting occurrences."
 msgstr ""
-"Я понимаю, пожалуйста, пропустите любые дни с конфликтующими повторениями."
 
 #: indico/modules/rb/client/js/common/bookings/BookingEditCalendar.jsx
 msgid "Your booking has already started and will be split into:"
@@ -4165,18 +4157,16 @@ msgstr "Ваше бронирование уже началось и будет 
 
 #: indico/modules/rb/client/js/common/bookings/BookingEditCalendar.jsx
 msgid "the original booking, which will be shortened;"
-msgstr "исходное бронирование, которое будет сокращено;"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingEditCalendar.jsx
 msgid ""
 "a new booking, which will take into account the updated time information."
 msgstr ""
-"новое бронирование, которое будет учитывать обновленную информацию о "
-"времени."
 
 #: indico/modules/rb/client/js/common/bookings/BookingEditCalendar.jsx
 msgid "Original booking"
-msgstr "Исходное бронирование"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingEditCalendar.jsx
 msgid "New booking"
@@ -4184,7 +4174,7 @@ msgstr "Новое бронирование"
 
 #: indico/modules/rb/client/js/common/bookings/BookingEditCalendar.jsx
 msgid "Booking after changes"
-msgstr "Бронирование после изменений"
+msgstr ""
 
 #: indico/modules/categories/templates/display/overview/base.html
 #: indico/modules/rb/client/js/common/bookings/BookingEditForm.jsx
@@ -4213,7 +4203,7 @@ msgstr[3] "Недели"
 #: indico/modules/rb/client/js/common/bookings/BookingEditForm.jsx
 #: indico/modules/rb/util.py
 msgid "You cannot modify the repeat frequency of an existing booking."
-msgstr "Вы не можете изменить частоту повторения существующего бронирования."
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingEditForm.jsx
 #: indico/modules/rb/client/js/components/BookingBootstrapForm.jsx
@@ -4243,33 +4233,31 @@ msgstr "Повторять по"
 
 #: indico/modules/rb/client/js/common/bookings/BookingEditForm.jsx
 msgid "This booking will require approval!"
-msgstr "Для этого бронирования потребуется утверждение!"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingEditForm.jsx
 msgid "Changing date or time will revert it back to a pre-booking."
 msgstr ""
-"Изменение даты или времени вернет его в статус предварительного "
-"бронирования."
 
 #: indico/modules/rb/client/js/common/bookings/BookingEditForm.jsx
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "I'll be using it myself"
-msgstr "Я буду использовать это сам"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingEditForm.jsx
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "I'm booking it for someone else"
-msgstr "Я бронирую для кого-то другого"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingEditForm.jsx
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "Reason for booking"
-msgstr "Причина бронирования"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingEditForm.jsx
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "Internal notes about the booking are only visible to room managers."
-msgstr "Внутренние заметки о бронировании видны только менеджерам помещений."
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingExportModal.jsx
 #: indico/modules/rb/client/js/modules/roomList/RoomList.jsx
@@ -4278,7 +4266,7 @@ msgstr "Экспорт бронирований"
 
 #: indico/modules/rb/client/js/common/bookings/BookingExportModal.jsx
 msgid "File format"
-msgstr "Формат файла"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingExportModal.jsx
 #: indico/modules/rb/client/js/modules/blockings/BlockingModal.jsx
@@ -4287,27 +4275,27 @@ msgstr "Период"
 
 #: indico/modules/rb/client/js/common/bookings/BookingExportModal.jsx
 msgid "Rooms to export"
-msgstr "Комнаты для экспорта"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingExportModal.jsx
 msgid "Please choose at least one room."
-msgstr "Пожалуйста, выберите хотя бы одну комнату."
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingLinks.jsx
 msgid "This booking has {count} linked occurrence:"
 msgid_plural "This booking has {count} linked occurrences:"
-msgstr[0] "Эта бронь имеет {count} связанное повторение:"
-msgstr[1] "Эта бронь имеет {count} связанных повторения:"
-msgstr[2] "Эта бронь имеет {count} связанных повторений:"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingLinks.jsx
 msgid "Details hidden - no access"
-msgstr "Детали скрыты - нет доступа"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingObjectLink.jsx
 msgid "This booking will be linked to an event:"
-msgstr "Это бронирование будет связано с событием:"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingObjectLink.jsx
 msgid "This booking will be linked to a contribution:"
@@ -4315,19 +4303,19 @@ msgstr "Это бронирование будет связано с публи�
 
 #: indico/modules/rb/client/js/common/bookings/BookingObjectLink.jsx
 msgid "This booking will be linked to a session block:"
-msgstr "Это бронирование будет связано с блоком сессии:"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/OccurrencesCounter.jsx
 msgid "Number of booking occurrences"
-msgstr "Количество бронирований"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/OccurrencesCounter.jsx
 msgid "Number of past occurrences that will not be modified"
-msgstr "Количество прошлых бронирований, которые не будут изменены"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/OccurrencesCounter.jsx
 msgid "Number of new occurrences after changes"
-msgstr "Количество новых бронирований после изменений"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/filters/validation.js
 #: indico/web/client/js/jquery/utils/errors.js
@@ -4337,7 +4325,7 @@ msgstr "Что-то пошло не так"
 
 #: indico/modules/rb/client/js/common/filters/validation.js
 msgid "The provided URL was not properly formatted."
-msgstr "Предоставленный URL имеет неверный формат."
+msgstr ""
 
 #: indico/modules/rb/client/js/common/linking/LinkBar.jsx
 msgid "Your booking will be linked to an event:"
@@ -4345,11 +4333,11 @@ msgstr "Ваше бронирование будет связано с меро�
 
 #: indico/modules/rb/client/js/common/linking/LinkBar.jsx
 msgid "Your booking will be linked to a contribution:"
-msgstr "Ваше бронирование будет связано с вкладом:"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/linking/LinkBar.jsx
 msgid "Your booking will be linked to a session block:"
-msgstr "Ваше бронирование будет связано с блоком сессии:"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/linking/LinkBar.jsx
 msgid "Exit linking mode"
@@ -4365,7 +4353,7 @@ msgstr "Выбрать область"
 
 #: indico/modules/rb/client/js/common/map/MapController.jsx
 msgid "Zoom out to include all listed rooms"
-msgstr "Уменьшите масштаб, чтобы включить все перечисленные комнаты"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/RoomDetailsModal.jsx
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
@@ -4394,11 +4382,11 @@ msgstr "Любой желающий может забронировать это
 
 #: indico/modules/rb/client/js/common/rooms/RoomDetailsModal.jsx
 msgid "You can book this space."
-msgstr "Вы можете забронировать это место."
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/RoomDetailsModal.jsx
 msgid "Max. {max_advance_days} days in advance"
-msgstr "Макс. {max_advance_days} дней заранее"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/RoomDetailsModal.jsx
 msgid "This space cannot be booked at the moment."
@@ -4414,20 +4402,20 @@ msgstr "Сведения о помещении"
 
 #: indico/modules/rb/client/js/common/rooms/RoomStats.jsx
 msgid "Times booked"
-msgstr "Время бронирования"
+msgstr ""
 
 #: indico/modules/events/registration/stats.py
 #: indico/modules/rb/client/js/common/rooms/RoomStats.jsx
 msgid "Occupancy"
-msgstr "Занятость"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/RoomStats.jsx
 msgid "excluding weekends"
-msgstr "исключая выходные"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/RoomStats.jsx
 msgid "Statistics"
-msgstr "Статистика"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/RoomStats.jsx
 msgid "Last day"
@@ -4446,23 +4434,23 @@ msgstr "Все дни"
 
 #: indico/modules/rb/client/js/common/rooms/edit/DailyAvailability.jsx
 msgid "Add new Daily Availability"
-msgstr "Добавить новую ежедневную доступность"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/edit/DailyAvailability.jsx
 msgid "No daily availability found"
-msgstr "Ежедневная доступность не найдена"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/edit/EquipmentList.jsx
 msgid "No equipment found"
-msgstr "Оборудование не найдено"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/edit/NonBookablePeriods.jsx
 msgid "Add new Nonbookable Periods"
-msgstr "Добавить новые периоды, недоступные для бронирования"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/edit/NonBookablePeriods.jsx
 msgid "No non-bookable periods found"
-msgstr "Периоды, недоступные для бронирования, не найдены"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/edit/RoomEditDetails.jsx
 msgid "Owner"
@@ -4490,7 +4478,7 @@ msgstr "Вместимость"
 
 #: indico/modules/rb/client/js/common/rooms/edit/RoomEditDetails.jsx
 msgid "Division"
-msgstr "Подразделение"
+msgstr ""
 
 #: indico/modules/events/abstracts/forms.py
 #: indico/modules/rb/client/js/common/rooms/edit/RoomEditDetails.jsx
@@ -4566,7 +4554,7 @@ msgstr "Опции"
 
 #: indico/modules/rb/client/js/common/rooms/edit/RoomEditModal.jsx
 msgid "Both latitude and longitude need to be set (or omitted)."
-msgstr "Необходимо установить (или опустить) как широту, так и долготу."
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/edit/RoomEditModal.jsx
 msgid "Add Room"
@@ -4586,11 +4574,11 @@ msgstr "Помещение было успешно обновлено."
 
 #: indico/modules/rb/client/js/common/rooms/edit/RoomEditModal.jsx
 msgid "Room could not be updated."
-msgstr "Room не удалось обновить."
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/edit/RoomEditModal.jsx
 msgid "Reset form"
-msgstr "Сбросить форму"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/edit/RoomEditNotifications.jsx
 msgid "Notification emails"
@@ -4638,35 +4626,35 @@ msgstr "Доступность"
 
 #: indico/modules/rb/client/js/common/rooms/edit/RoomEditOptions.jsx
 msgid "Equipment and custom attributes"
-msgstr "Оборудование и пользовательские атрибуты"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/edit/RoomEditOptions.jsx
 msgid "Add new equipment"
-msgstr "Добавить новое оборудование"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/edit/RoomEditOptions.jsx
 msgid "Add new attributes"
-msgstr "Добавить новые атрибуты"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/edit/RoomEditOptions.jsx
 msgid "No custom attributes defined"
-msgstr "Не определены пользовательские атрибуты"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/edit/RoomEditOptions.jsx
 msgid "Maximum advance time for bookings (days)"
-msgstr "Максимальное время предварительного бронирования (дней)"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/edit/RoomEditOptions.jsx
 msgid "Max duration of a booking (day)"
-msgstr "Максимальная продолжительность бронирования (день)"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/edit/RoomEditOptions.jsx
 msgid "Bookable"
-msgstr "Доступно для бронирования"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/edit/RoomEditOptions.jsx
 msgid "Require confirmation (pre-bookings)"
-msgstr "Требовать подтверждение (предварительное бронирование)"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/edit/RoomEditPermissions.jsx
 msgid "Booking Mode"
@@ -4689,19 +4677,19 @@ msgstr "Загрузить"
 
 #: indico/modules/rb/client/js/common/rooms/edit/RoomPhoto.jsx
 msgid "Save photo"
-msgstr "Сохранить фото"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/edit/RoomPhoto.jsx
 msgid "Cancel photo upload"
-msgstr "Отменить загрузку фото"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/edit/RoomPhoto.jsx
 msgid "Upload a new photo"
-msgstr "Загрузить новое фото"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/edit/RoomPhoto.jsx
 msgid "Delete existing photo"
-msgstr "Удалить существующее фото"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/rooms/edit/RoomPhoto.jsx
 msgid "No photo found."
@@ -4710,8 +4698,6 @@ msgstr "Фотографии не найдены."
 #: indico/modules/rb/client/js/common/timeline/DailyTimelineContent.jsx
 msgid "Please turn your device horizontally to view this page."
 msgstr ""
-"Пожалуйста, поверните ваше устройство горизонтально для просмотра этой "
-"страницы."
 
 #: indico/modules/categories/templates/display/overview/base.html
 #: indico/modules/events/management/forms.py
@@ -4725,15 +4711,15 @@ msgstr "Неделя c {date}"
 
 #: indico/modules/rb/client/js/common/timeline/EditableTimelineItem.jsx
 msgid "Drag the mouse to create a booking"
-msgstr "Перетащите мышь, чтобы создать бронирование"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/timeline/EditableTimelineItem.jsx
 msgid "Tip: click and drag to book!"
-msgstr "Совет: нажмите и перетащите, чтобы забронировать!"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/timeline/EditableTimelineItem.jsx
 msgid "Tip: click and drag to pre-book!"
-msgstr "Совет: нажмите и перетащите, чтобы предварительно забронировать!"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/timeline/ElasticTimeline.jsx
 msgid "No occurrences found"
@@ -4741,15 +4727,15 @@ msgstr "Ничего не найдено"
 
 #: indico/modules/rb/client/js/common/timeline/RowActionsDropdown.jsx
 msgid "Are you sure you want to reject this occurrence ({date})?"
-msgstr "Вы уверены, что хотите отклонить это повторение ({date})?"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/timeline/RowActionsDropdown.jsx
 msgid "Cancel occurrence"
-msgstr "Отменить повторение"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/timeline/RowActionsDropdown.jsx
 msgid "Reject occurrence"
-msgstr "Отклонить экземпляр"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/timeline/RowActionsDropdown.jsx
 msgid "Show room timeline"
@@ -4757,11 +4743,11 @@ msgstr "Показать расписание помещения"
 
 #: indico/modules/rb/client/js/common/timeline/RowActionsDropdown.jsx
 msgid "Are you sure you want to cancel this occurrence ({serializedDate})?"
-msgstr "Вы уверены, что хотите отменить этот экземпляр ({serializedDate})?"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/timeline/RowActionsDropdown.jsx
 msgid "Confirm rejection"
-msgstr "Подтвердить отклонение"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/timeline/TimelineItem.jsx
 msgid "Recurs daily"
@@ -4797,27 +4783,27 @@ msgstr "По {weekdays}"
 
 #: indico/modules/rb/client/js/common/timeline/TimelineItem.jsx
 msgid "Space blocked: {reason}"
-msgstr "Помещение заблокировано: {reason}"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/timeline/TimelineItem.jsx
 msgid "(You are allowed to make a booking)"
-msgstr "(Вам разрешено сделать бронирование)"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/timeline/TimelineItem.jsx
 msgid "Not possible to book in this period"
-msgstr "Невозможно забронировать в этот период"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/timeline/TimelineItem.jsx
 msgid "Not possible to book between:"
-msgstr "Невозможно забронировать между:"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/timeline/TimelineItem.jsx
 msgid "Reason: {reason}"
-msgstr "Причина: {reason}"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/timeline/TimelineItem.jsx
 msgid "This occurrence will be cancelled"
-msgstr "Этот экземпляр будет отменен"
+msgstr ""
 
 #: indico/modules/events/registration/models/registrations.py
 #: indico/modules/events/requests/templates/event_requests.html
@@ -4827,28 +4813,28 @@ msgstr "Отклонено"
 
 #: indico/modules/rb/client/js/common/timeline/TimelineItem.jsx
 msgid "This occurrence is conflicting with an existing booking"
-msgstr "Этот экземпляр конфликтует с существующим бронированием"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/timeline/TimelineItem.jsx
 msgid "Full overlap between two pre-bookings:"
-msgstr "Полное перекрытие между двумя предварительными бронированиями:"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/timeline/TimelineItem.jsx
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "{time} by {bookedForName} ({bookingReason})"
-msgstr "{time} от {bookedForName} ({bookingReason})"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/timeline/TimelineItem.jsx
 msgid "Click to book it"
-msgstr "Нажмите, чтобы забронировать"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/timeline/TimelineItem.jsx
 msgid "Click to pre-book it"
-msgstr "Нажмите, чтобы предварительно забронировать"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/timeline/TimelineLegend.jsx
 msgid "No occurrences"
-msgstr "Нет повторений"
+msgstr ""
 
 #: indico/modules/rb/client/js/components/AdminOverrideBar.jsx
 msgid "Admin override enabled"
@@ -4856,7 +4842,7 @@ msgstr "Переопределение администратором включ
 
 #: indico/modules/rb/client/js/components/AdminOverrideBar.jsx
 msgid "Use {shortcut} to toggle."
-msgstr "Используйте {shortcut} для переключения."
+msgstr ""
 
 #: indico/modules/rb/client/js/components/AdminOverrideBar.jsx
 msgid ""
@@ -4873,7 +4859,7 @@ msgstr "Отключить переопределение администрат
 
 #: indico/modules/rb/client/js/components/App.jsx
 msgid "This page does not exist."
-msgstr "Эта страница не существует."
+msgstr ""
 
 #: indico/modules/rb/client/js/components/App.jsx
 #: indico/modules/rb/templates/emails/base_email.html
@@ -4948,15 +4934,15 @@ msgstr[3] "{count} {label}мест{/label}"
 
 #: indico/modules/rb/client/js/components/RoomBasicDetails.jsx
 msgid "Surface Area"
-msgstr "Площадь поверхности"
+msgstr ""
 
 #: indico/modules/rb/client/js/components/RoomBasicDetails.jsx
 msgid "Geographical Coordinates"
-msgstr "Географические координаты"
+msgstr ""
 
 #: indico/modules/rb/client/js/components/RoomSelector.jsx
 msgid "There are no rooms selected."
-msgstr "Нет выбранных комнат."
+msgstr ""
 
 #: indico/modules/core/__init__.py
 #: indico/modules/rb/client/js/components/SidebarFooter.jsx
@@ -4996,7 +4982,7 @@ msgstr "Мои зарезервированные помещения"
 
 #: indico/modules/rb/client/js/components/SidebarMenu.jsx
 msgid "My Locations"
-msgstr "Мои Места"
+msgstr ""
 
 #: indico/modules/admin/__init__.py indico/modules/admin/views.py
 #: indico/modules/api/templates/user_profile.html
@@ -5015,11 +5001,11 @@ msgstr "{startDateDay} {startDate} - {endDateDay} {endDate}"
 
 #: indico/modules/rb/client/js/components/TimeInformation.jsx
 msgid "{count} occurrences"
-msgstr "{count} occurrences"
+msgstr ""
 
 #: indico/modules/rb/client/js/components/TimeInformation.jsx
 msgid "See on timeline"
-msgstr "Показать на временной шкале"
+msgstr ""
 
 #: indico/modules/rb/client/js/components/TimeRangePicker.jsx
 msgid "{count} hour"
@@ -5032,14 +5018,14 @@ msgstr[3] "{count} часов"
 #: indico/modules/rb/client/js/components/TimeRangePicker.jsx
 msgid "{count} min"
 msgid_plural "{count} min"
-msgstr[0] "{count} мин"
-msgstr[1] "{count} мин"
-msgstr[2] "{count} мин"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/rb/client/js/modules/admin/AdminLocationRooms.jsx
 msgid "This location does not exist."
-msgstr "Этого места не существует."
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/AdminLocationRooms.jsx
 msgid "Location: {location}"
@@ -5060,7 +5046,7 @@ msgstr "Общие настройки"
 #: indico/modules/rb/client/js/modules/admin/AdminMenu.jsx
 #: indico/modules/rb/client/js/modules/admin/MapAreasPage.jsx
 msgid "Map Areas"
-msgstr "Области карты"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/AdminMenu.jsx
 msgid "Room Metadata"
@@ -5069,11 +5055,11 @@ msgstr "Характеристики помещения"
 #: indico/modules/rb/client/js/modules/admin/AdminMenu.jsx
 #: indico/modules/rb/client/js/modules/admin/AttributesPage.jsx
 msgid "Attributes"
-msgstr "Атрибуты"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/AdminMenu.jsx
 msgid "Equipment & Features"
-msgstr "Оборудование и Функции"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/AdminMenu.jsx
 #: indico/modules/rb/client/js/modules/admin/LocationPage.jsx
@@ -5082,60 +5068,60 @@ msgstr "Площадки"
 
 #: indico/modules/rb/client/js/modules/admin/AdminRoomItem.jsx
 msgid "Are you sure you want to delete this room?"
-msgstr "Вы уверены, что хотите удалить эту комнату?"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/AttributesPage.jsx
 msgid "This attribute is not shown in the public room details."
-msgstr "Этот атрибут не отображается в общедоступной информации о комнате."
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/AttributesPage.jsx
 #: indico/modules/rb/client/js/modules/admin/EquipmentTypeList.jsx
 #: indico/modules/rb/client/js/modules/admin/RoomFeatureList.jsx
 msgid "Currently unused"
-msgstr "В настоящее время не используется"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/AttributesPage.jsx
 msgid "Used in {count}1{/count} room"
 msgid_plural "Used in {count} rooms"
-msgstr[0] "Используется в {count}1{/count} комнате"
-msgstr[1] "Используется в {count} комнатах"
-msgstr[2] "Используется в {count} комнатах"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/rb/client/js/modules/admin/AttributesPage.jsx
 msgid "Are you sure you want to delete the attribute {name}?"
-msgstr "Вы уверены, что хотите удалить атрибут {name}?"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/AttributesPage.jsx
 msgid "It is currently used in {count}1{/count} room."
 msgid_plural "It is currently used in {count} rooms."
-msgstr[0] "В настоящее время используется в {count}1{/count} комнате."
-msgstr[1] "В настоящее время используется в {count} комнатах."
-msgstr[2] "В настоящее время используется в {count} комнатах."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/rb/client/js/modules/admin/AttributesPage.jsx
 msgid "Add attribute"
-msgstr "Добавить атрибут"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/CategoryList.jsx
 msgid "Please enter a category ID"
-msgstr "Пожалуйста, введите ID категории"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/CategoryList.jsx
 msgid "Add category"
-msgstr "Добавить категорию"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/EquipmentTypeList.jsx
 msgid "This equipment type provides the {name} feature."
-msgstr "Этот тип оборудования предоставляет функцию {name}."
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/EquipmentTypeList.jsx
 msgid "Available in {count}1{/count} room"
 msgid_plural "Available in {count} rooms"
-msgstr[0] "Доступно в {count}1{/count} комнате"
-msgstr[1] "Доступно в {count} комнатах"
-msgstr[2] "Доступно в {count} комнатах"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/events/features/__init__.py
@@ -5147,27 +5133,27 @@ msgstr "Функции"
 
 #: indico/modules/rb/client/js/modules/admin/EquipmentTypeList.jsx
 msgid "Are you sure you want to delete the equipment type {name}?"
-msgstr "Вы уверены, что хотите удалить тип оборудования {name}?"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/EquipmentTypeList.jsx
 msgid "It is currently used by {count}1{/count} room."
 msgid_plural "It is currently used by {count} rooms."
-msgstr[0] "В данный момент используется {count}1{/count} комнатой."
-msgstr[1] "В данный момент используется {count} комнатами."
-msgstr[2] "В данный момент используется {count} комнатами."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/rb/client/js/modules/admin/EquipmentTypeList.jsx
 msgid "Equipment types"
-msgstr "Типы оборудования"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/EquipmentTypeList.jsx
 msgid "Add equipment type"
-msgstr "Добавить тип оборудования"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/LocationPage.jsx
 msgid "No rooms"
-msgstr "Нет комнат"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/LocationPage.jsx
 msgid "{count}1{/count} room"
@@ -5179,7 +5165,7 @@ msgstr[3] "{count} помещений"
 
 #: indico/modules/rb/client/js/modules/admin/LocationPage.jsx
 msgid "Room name format"
-msgstr "Формат названия комнаты"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/LocationPage.jsx
 msgid "Missing placeholder: number"
@@ -5188,9 +5174,9 @@ msgstr "Отсутствующий заполнитель: число"
 #: indico/modules/rb/client/js/modules/admin/LocationPage.jsx
 msgid "Invalid placeholder: {placeholders}"
 msgid_plural "Invalid placeholders: {placeholders}"
-msgstr[0] "Недопустимый placeholder: {placeholders}"
-msgstr[1] "Недопустимые placeholders: {placeholders}"
-msgstr[2] "Недопустимые placeholders: {placeholders}"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/rb/client/js/modules/admin/LocationPage.jsx
@@ -5198,8 +5184,6 @@ msgid ""
 "Specify the room name format using any of the following placeholders: "
 "{placeholders}"
 msgstr ""
-"Укажите формат названия комнаты, используя любой из следующих placeholders: "
-"{placeholders}"
 
 #: indico/modules/rb/client/js/modules/admin/LocationPage.jsx
 msgid "Map URL template"
@@ -5210,60 +5194,54 @@ msgid ""
 "Indico can show a link to an external map when a room is associated to an "
 "event."
 msgstr ""
-"Indico может отображать ссылку на внешнюю карту, когда комната связана с "
-"мероприятием."
 
 #: indico/modules/rb/client/js/modules/admin/LocationPage.jsx
 msgid ""
 "Specify a custom URL template using any of the following placeholders: "
 "{placeholders}"
 msgstr ""
-"Укажите пользовательский шаблон URL-адреса, используя любой из следующих "
-"placeholders: {placeholders}"
 
 #: indico/modules/rb/client/js/modules/admin/LocationPage.jsx
 msgid ""
 "Are you sure you want to delete the location {name} and all data associated "
 "with it?"
 msgstr ""
-"Вы уверены, что хотите удалить местоположение {name} и все связанные с ним "
-"данные?"
 
 #: indico/modules/rb/client/js/modules/admin/LocationPage.jsx
 msgid "Add location"
-msgstr "Добавить местоположение"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/MapAreasPage.jsx
 msgid "Create new area"
-msgstr "Создать новую область"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/MapAreasPage.jsx
 msgid "Update area"
-msgstr "Обновить область"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/MapAreasPage.jsx
 msgid "Name of the area"
-msgstr "Название области"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/MapAreasPage.jsx
 msgid "Default map area"
-msgstr "Область карты по умолчанию"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/MapAreasPage.jsx
 msgid "SW Latitude"
-msgstr "ЮЗ Широта"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/MapAreasPage.jsx
 msgid "SW Longitude"
-msgstr "ЮЗ Долгота"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/MapAreasPage.jsx
 msgid "NE Latitude"
-msgstr "СВ Широта"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/MapAreasPage.jsx
 msgid "NE Longitude"
-msgstr "СВ Долгота"
+msgstr ""
 
 #: indico/modules/events/registration/templates/management/participants.html
 #: indico/modules/events/registration/templates/management/regform_create.html
@@ -5280,9 +5258,9 @@ msgstr "Обновить"
 #: indico/modules/rb/client/js/modules/admin/RoomFeatureList.jsx
 msgid "Provided by {count}1{/count} equipment type"
 msgid_plural "Provided by {count} equipment types"
-msgstr[0] "Предоставляется {count}1{/count} типом оборудования"
-msgstr[1] "Предоставляется {count} оборудование типа"
-msgstr[2] "Предоставляется {count} типами оборудования"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/categories/templates/management/settings.html
@@ -5292,20 +5270,19 @@ msgstr "Иконка"
 
 #: indico/modules/rb/client/js/modules/admin/RoomFeatureList.jsx
 msgid "Are you sure you want to delete the feature {name}?"
-msgstr "Вы уверены, что хотите удалить функцию {name}?"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/RoomFeatureList.jsx
 msgid "It is currently provided by {count}1{/count} equipment type."
 msgid_plural "It is currently provided by {count} equipment types."
 msgstr[0] ""
-"В настоящее время он предоставляется {count}1{/count} типом оборудования."
-msgstr[1] "В настоящее время он предоставляется {count} типами оборудования."
-msgstr[2] "В настоящее время он предоставляется {count} типами оборудования."
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/rb/client/js/modules/admin/RoomFeatureList.jsx
 msgid "Add feature"
-msgstr "Добавить функцию"
+msgstr ""
 
 #: indico/modules/events/persons/__init__.py indico/modules/rb/__init__.py
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
@@ -5326,7 +5303,7 @@ msgstr "Никогда"
 #: indico/modules/rb/__init__.py
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
 msgid "Not for events"
-msgstr "Не для мероприятий"
+msgstr ""
 
 #: indico/modules/core/__init__.py
 #: indico/modules/core/templates/admin/settings.html
@@ -5369,28 +5346,23 @@ msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
 msgid "Allow owners/managers to edit their rooms"
-msgstr "Разрешить владельцам/менеджерам редактировать их комнаты"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
 msgid ""
 "By default only admins and location managers can modify rooms, but you can "
 "allow room owners and managers to modify them as well."
 msgstr ""
-"По умолчанию только администраторы и менеджеры местоположений могут изменять"
-" комнаты, но вы можете разрешить владельцам и менеджерам комнат также "
-"изменять их."
 
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
 msgid "Hide booking details"
-msgstr "Скрыть детали бронирования"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
 msgid ""
 "If enabled, only room managers and people involved in a booking can see "
 "details such as who made the booking and its history."
 msgstr ""
-"Если включено, только менеджеры комнат и люди, участвующие в бронировании, "
-"могут видеть такие детали, как кто сделал бронирование и его историю."
 
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
 msgid "Hide the Room Booking system from unauthorized users"
@@ -5402,12 +5374,10 @@ msgid ""
 "If enabled, links to the Room Booking system will not be shown to users who "
 "do not have access to it."
 msgstr ""
-"Если включено, ссылки на систему бронирования комнат не будут отображаться "
-"для пользователей, у которых нет к ней доступа."
 
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
 msgid "Tileserver URL"
-msgstr "Tileserver URL"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
 msgid ""
@@ -5420,14 +5390,14 @@ msgstr ""
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
 #: indico/web/client/js/react/forms/validators.js
 msgid "Please provide a valid URL"
-msgstr "Пожалуйста, укажите действительный URL"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
 msgid "Missing placeholder: {placeholders}"
 msgid_plural "Missing placeholders: {placeholders}"
-msgstr[0] "Отсутствует заполнитель: {placeholders}"
-msgstr[1] "Отсутствуют заполнители: {placeholders}"
-msgstr[2] "Отсутствуют заполнители: {placeholders}"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
@@ -5440,15 +5410,15 @@ msgstr "Максимальная продолжительность бронир
 
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
 msgid "Booking reason required"
-msgstr "Требуется указать причину бронирования"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
 msgid "Specify when a booking reason must be provided."
-msgstr "Укажите, когда необходимо предоставлять причину бронирования."
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
 msgid "Send reminders for upcoming bookings"
-msgstr "Отправлять напоминания о предстоящих бронированиях"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
 msgid "Specify how many days in advance booking reminders should be sent"
@@ -5469,7 +5439,7 @@ msgstr "Ежемесячные бронирования"
 
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
 msgid "Send reminders when bookings are about to end"
-msgstr "Отправлять напоминания, когда бронирования скоро закончатся"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
 msgid ""
@@ -5484,31 +5454,27 @@ msgstr "Ежедневные бронирования"
 
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
 msgid "Enable internal booking notes"
-msgstr "Включить внутренние заметки о бронировании"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
 msgid ""
 "Allow room owners/managers to add internal notes to bookings which are only "
 "visible to other room owners/managers."
 msgstr ""
-"Разрешить владельцам/менеджерам комнат добавлять внутренние заметки к "
-"бронированиям, которые видны только другим владельцам/менеджерам комнат."
 
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
 msgid "Disable booking during event creation"
-msgstr "Отключить бронирование во время создания мероприятия"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
 msgid ""
 "Specify the IDs of categories for which booking a room during event creation"
 " will not be suggested."
 msgstr ""
-"Укажите ID категорий, для которых бронирование комнаты во время создания "
-"мероприятия не будет предлагаться."
 
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
 msgid "Grace period"
-msgstr "Льготный период"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/admin/SettingsPage.jsx
 msgid ""
@@ -5573,7 +5539,7 @@ msgstr "Нет зарезервированных помещений."
 #: indico/modules/rb/client/js/modules/blockings/BlockingModal.jsx
 #: indico/web/client/js/react/forms/validators.js
 msgid "Please choose a valid period."
-msgstr "Пожалуйста, выберите допустимый период."
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/blockings/BlockingModal.jsx
 msgid "Please provide the reason for the blocking."
@@ -5589,11 +5555,11 @@ msgstr "Запрос на резервирование принят"
 
 #: indico/modules/rb/client/js/modules/blockings/BlockingModal.jsx
 msgid "Pending approval by a room manager"
-msgstr "Ожидает утверждения менеджером комнаты"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/blockings/BlockingModal.jsx
 msgid "Booking rejected by {rejectedBy}"
-msgstr "Бронирование отклонено {rejectedBy}"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/blockings/BlockingModal.jsx
 msgid "Accept blocking"
@@ -5605,7 +5571,7 @@ msgstr "Обновить резервирование"
 
 #: indico/modules/rb/client/js/modules/blockings/BlockingModal.jsx
 msgid "Block selected spaces"
-msgstr "Блокировать выбранные пространства"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/blockings/BlockingModal.jsx
 msgid "Blocking details"
@@ -5631,12 +5597,6 @@ msgid ""
 "also block rooms you do not own - however, those blockings have to be "
 "approved by the owners of those rooms."
 msgstr ""
-"При блокировке комнат никто, кроме вас, менеджеров комнат и тех "
-"пользователей/групп, которых вы укажете в списке «Разрешенные "
-"пользователи/группы», не сможет создавать бронирования для указанных комнат "
-"в данный период времени. Вы также можете блокировать комнаты, которыми вы не"
-" владеете, однако такие блокировки должны быть одобрены владельцами этих "
-"комнат."
 
 #: indico/modules/rb/client/js/modules/blockings/BlockingModal.jsx
 msgid ""
@@ -5664,15 +5624,15 @@ msgstr "Предоставить причину для резервирован�
 
 #: indico/modules/rb/client/js/modules/blockings/BlockingModal.jsx
 msgid "Authorized users/groups"
-msgstr "Авторизованные пользователи/группы"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/blockings/BlockingModal.jsx
 msgid "Rooms to block"
-msgstr "Комнаты для блокировки"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/blockings/BlockingModal.jsx
 msgid "Blocked rooms"
-msgstr "Заблокированные комнаты"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/blockings/BlockingModal.jsx
 msgid ""
@@ -5697,34 +5657,34 @@ msgstr "Вы можете посмотреть свое резервирован
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookFromListModal.jsx
 msgid "The space will be free on the selected time slot(s)"
-msgstr "Пространство будет свободно в выбранные временные интервалы"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookFromListModal.jsx
 msgid "The space won't be available on one or more days"
-msgstr "Помещение будет недоступно в один или несколько дней"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookFromListModal.jsx
 msgid "Space cannot be booked."
-msgstr "Помещение не может быть забронировано."
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookFromListModal.jsx
 msgid "One or more bookings would conflict with yours."
-msgstr "Одно или несколько бронирований будут конфликтовать с вашим."
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookFromListModal.jsx
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "Bookings in the past are not allowed."
-msgstr "Бронирование в прошлом не разрешено."
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookFromListModal.jsx
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoom.jsx
 msgid "Book Room"
-msgstr "Забронировать помещение"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookFromListModal.jsx
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoom.jsx
 msgid "Pre-Book Room"
-msgstr "Предварительно забронировать помещение"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookFromListModal.jsx
 msgid "Book"
@@ -5732,11 +5692,11 @@ msgstr "Книга"
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookFromListModal.jsx
 msgid "Pre-Book"
-msgstr "Предварительно забронировать"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoom.jsx
 msgid "Here are some alternatives we've found for you!"
-msgstr "Вот некоторые альтернативы, которые мы нашли для вас!"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoom.jsx
 msgid "List view"
@@ -5758,15 +5718,15 @@ msgstr "Пожалуйста, выберите вариант!"
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "Please specify a user"
-msgstr "Пожалуйста, укажите пользователя"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "You need to provide a reason"
-msgstr "Вам нужно указать причину"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "Choose an event"
-msgstr "Выберите мероприятие"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid ""
@@ -5778,17 +5738,8 @@ msgid_plural ""
 "this room for one of your events, please select it below. The room of the "
 "selected event will automatically be updated."
 msgstr[0] ""
-"У вас есть мероприятие, которое проходит в выбранное время. Если вы "
-"бронируете комнату для этого мероприятия, пожалуйста, выберите его ниже. "
-"Комната выбранного мероприятия будет автоматически обновлена."
 msgstr[1] ""
-"У вас есть мероприятия, которые проходят в выбранное время. Если вы "
-"бронируете комнату для одного из этих мероприятий, пожалуйста, выберите его "
-"ниже. Комната выбранного мероприятия будет автоматически обновлена."
 msgstr[2] ""
-"У вас есть мероприятия, которые проходят в выбранное время. Если вы "
-"бронируете комнату для одного из этих мероприятий, пожалуйста, выберите его "
-"ниже. Комната выбранного мероприятия будет автоматически обновлена."
 msgstr[3] ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
@@ -5801,89 +5752,82 @@ msgstr "Место успешно забронировано!"
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "You can consult your pre-booking {link}here{/link}."
-msgstr "Вы можете посмотреть свою предварительную бронь {link}здесь{/link}."
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "You can consult your booking {link}here{/link}."
-msgstr "Вы можете посмотреть свою бронь {link}здесь{/link}."
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "Couldn't book the room"
-msgstr "Не удалось забронировать комнату"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "Booking conflicts"
-msgstr "Конфликты бронирования"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "Your booking conflicts with another existing one."
 msgid_plural ""
 "{count} occurrences of your booking conflict with existing bookings."
-msgstr[0] "Ваша бронь конфликтует с существующей."
-msgstr[1] "{count} случая вашей брони конфликтуют с существующими бронями."
-msgstr[2] "{count} случаев вашей брони конфликтуют с существующими бронями."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "You are creating a {highlight}Pre-Booking{/highlight}"
-msgstr "Вы создаете {highlight}Предварительную бронь{/highlight}"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid ""
 "A Pre-Booking has to be approved by the room managers before you can use the"
 " space in question."
 msgstr ""
-"Предварительная бронь должна быть одобрена менеджерами комнаты, прежде чем "
-"вы сможете использовать данное пространство."
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "Pre-Booking conflicts"
-msgstr "Конфликты предварительного бронирования"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid ""
 "If you create this pre-booking, some of your days may get rejected as they "
 "overlap with the following pre-bookings:"
 msgstr ""
-"Если вы создадите это предварительное бронирование, некоторые из ваших дней "
-"могут быть отклонены, поскольку они пересекаются со следующими "
-"предварительными бронированиями:"
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid ""
 "If you create this booking, the following overlapping days of existing pre-"
 "bookings will automatically be rejected:"
 msgstr ""
-"Если вы создадите это бронирование, следующие перекрывающиеся дни "
-"существующих предварительных бронирований будут автоматически отклонены:"
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "Assign the room {room} to this event"
-msgstr "Назначить комнату {room} для этого мероприятия"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "Assign the room {room} to this contribution"
-msgstr "Назначить комнату {room} для этого доклада"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "Assign the room {room} to this session block"
-msgstr "Назначить комнату {room} для этого блока сессии"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "Assign the room {room} to this event (instead of {oldRoom})"
-msgstr "Назначить комнату {room} для этого мероприятия (вместо {oldRoom})"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "Assign the room {room} to this contribution (instead of {oldRoom})"
-msgstr "Назначить комнату {room} для этого доклада (вместо {oldRoom})"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "Assign the room {room} to this session block (instead of {oldRoom})"
-msgstr "Назначить комнату {room} для этого блока сессии (вместо {oldRoom})"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "Internal notes (optional)"
-msgstr "Внутренние заметки (необязательно)"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 #: indico/web/templates/confirmation_dialog.html
@@ -5892,15 +5836,15 @@ msgstr "Я передумал!"
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "Create Booking"
-msgstr "Создать бронирование"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookRoomModal.jsx
 msgid "Create Pre-booking"
-msgstr "Создать предварительное бронирование"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookingFilterBar.jsx
 msgid "Recurrence"
-msgstr "Повторение"
+msgstr ""
 
 #: indico/modules/events/contributions/templates/management/_contribution_list.html
 #: indico/modules/events/management/templates/_settings.html
@@ -5913,17 +5857,17 @@ msgstr "Время"
 #: indico/modules/rb/client/js/modules/bookRoom/BookingSuggestion.jsx
 msgid "One minute earlier"
 msgid_plural "{count} minutes earlier"
-msgstr[0] "На одну минуту раньше"
-msgstr[1] "{count} минуты раньше"
-msgstr[2] "{count} минут раньше"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookingSuggestion.jsx
 msgid "One minute later"
 msgid_plural "{count} minutes later"
-msgstr[0] "На одну минуту позже"
-msgstr[1] "{count} минуты позже"
-msgstr[2] "{count} минут позже"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookingSuggestion.jsx
@@ -5933,14 +5877,14 @@ msgstr "Мы изменим время начала бронирования д�
 #: indico/modules/rb/client/js/modules/bookRoom/BookingSuggestion.jsx
 msgid "One minute shorter"
 msgid_plural "{duration} minutes shorter"
-msgstr[0] "На одну минуту короче"
-msgstr[1] "На {duration} минуты короче"
-msgstr[2] "На {duration} минут короче"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookingSuggestion.jsx
 msgid "We'll shorten your booking to make it fit"
-msgstr "Мы сократим ваше бронирование, чтобы оно соответствовало требованиям"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookingSuggestion.jsx
 msgid "Skip one day"
@@ -5953,9 +5897,9 @@ msgstr[3] "Пропустить {skip} дней"
 #: indico/modules/rb/client/js/modules/bookRoom/BookingSuggestion.jsx
 msgid "We'll skip one occurrence to avoid any conflicts"
 msgid_plural "We'll skip {skip} occurrences to avoid any conflicts"
-msgstr[0] "Мы пропустим одно повторение, чтобы избежать конфликтов"
-msgstr[1] "Мы пропустим {skip} повторения, чтобы избежать конфликтов"
-msgstr[2] "Мы пропустим {skip} повторений, чтобы избежать конфликтов"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookingSuggestion.jsx
@@ -5971,12 +5915,10 @@ msgid ""
 "Bookings in this room cannot last this long and will be shortened "
 "accordingly"
 msgstr ""
-"Бронирования в этой комнате не могут длиться так долго и будут "
-"соответственно сокращены"
 
 #: indico/modules/rb/client/js/modules/bookRoom/BookingTimeline.jsx
 msgid "There are no rooms matching the criteria."
-msgstr "Нет комнат, соответствующих критериям."
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/bookRoom/SearchResultCount.jsx
 msgid "Total{count}"
@@ -6022,7 +5964,7 @@ msgstr "В этот промежуток времени свободных ме�
 
 #: indico/modules/rb/client/js/modules/bookRoom/UnavailableRoomsModal.jsx
 msgid "Unavailable Rooms"
-msgstr "Недоступные комнаты"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/calendar/Calendar.jsx
 msgid "Show only my bookings"
@@ -6054,27 +5996,27 @@ msgstr "Показать список всех предстоящих брони
 
 #: indico/modules/rb/client/js/modules/calendar/CalendarListView.jsx
 msgid "Link event"
-msgstr "Связать мероприятие"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/calendar/CalendarListView.jsx
 msgid "Are you sure you want to link this event?"
-msgstr "Вы уверены, что хотите связать это мероприятие?"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/calendar/CalendarListView.jsx
 msgid "Link to {bookedFor}"
-msgstr "Связать с {bookedFor}"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/calendar/CalendarListView.jsx
 msgid "This booking is pending confirmation by the room owner"
-msgstr "Это бронирование ожидает подтверждения от владельца комнаты"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/calendar/CalendarListView.jsx
 msgid "Booked for {bookedFor}"
-msgstr "Забронировано для {bookedFor}"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/calendar/CalendarListView.jsx
 msgid "Already linked"
-msgstr "Уже связано"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/calendar/CalendarListView.jsx
 msgid "There are no bookings matching the criteria."
@@ -6106,7 +6048,7 @@ msgstr "Активных заявок на бронирование"
 
 #: indico/modules/rb/client/js/modules/landing/UpcomingBookings.jsx
 msgid "Your bookings"
-msgstr "Ваши бронирования"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/roomList/RoomFilterBar.jsx
 msgid "Equipment"
@@ -6127,11 +6069,11 @@ msgstr "Показать только..."
 
 #: indico/modules/rb/client/js/modules/roomList/RoomList.jsx
 msgid "Deselect all rooms"
-msgstr "Снять выбор со всех комнат"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/roomList/RoomList.jsx
 msgid "Select all rooms"
-msgstr "Выбрать все комнаты"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/roomList/RoomList.jsx
 msgid "Block rooms"
@@ -6139,7 +6081,7 @@ msgstr "Заблокировать помещения"
 
 #: indico/modules/rb/client/js/modules/roomList/RoomList.jsx
 msgid "There are no rooms matching the criteria"
-msgstr "Нет комнат, соответствующих критериям"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/roomList/RoomList.jsx
 msgid "There is {count} match"
@@ -6155,7 +6097,7 @@ msgstr "Здание {buildingNumber}"
 
 #: indico/modules/rb/client/js/modules/roomList/filters/EquipmentForm.jsx
 msgid "See detailed equipment"
-msgstr "Смотреть подробное оборудование"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/roomList/filters/ShowOnlyForm.jsx
 msgid "My favorite rooms"
@@ -6204,15 +6146,15 @@ msgstr "Конфликт"
 
 #: indico/modules/rb/client/js/util.jsx
 msgid "Conflict with Pre-Booking"
-msgstr "Конфликт с предварительным бронированием"
+msgstr ""
 
 #: indico/modules/rb/client/js/util.jsx
 msgid "Invalid occurrence"
-msgstr "Недопустимое повторение"
+msgstr ""
 
 #: indico/modules/rb/client/js/util.jsx
 msgid "Other booking"
-msgstr "Другое бронирование"
+msgstr ""
 
 #: indico/modules/rb/client/js/util.jsx
 msgid "Blocking"
@@ -6228,11 +6170,11 @@ msgstr "Невозможно забронировать"
 
 #: indico/modules/rb/client/js/util.jsx
 msgid "Concurrent Pre-Bookings"
-msgstr "Параллельные предварительные бронирования"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/EventImageSelectField.jsx
 msgid "from Images"
-msgstr "из Images"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/EventImageSelectField.jsx
 msgid "from Materials"
@@ -6240,7 +6182,7 @@ msgstr "из материалов"
 
 #: indico/modules/receipts/client/js/printing/EventImageSelectField.jsx
 msgid "from Indico"
-msgstr "из Indico"
+msgstr ""
 
 #: indico/modules/designer/placeholders.py
 #: indico/modules/events/layout/templates/layout_conference.html
@@ -6250,97 +6192,97 @@ msgstr "Логотип мероприятия"
 
 #: indico/modules/receipts/client/js/printing/EventImageSelectField.jsx
 msgid "This field only accepts jpg, png, gif and webp picture formats."
-msgstr "Это поле принимает только форматы изображений jpg, png, gif и webp."
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/EventImageSelectField.jsx
 msgid "Select an image from the event"
-msgstr "Выберите изображение из мероприятия"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/EventImageSelectField.jsx
 msgid "Loading images..."
-msgstr "Загрузка изображений..."
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/EventImageSelectField.jsx
 msgid "No images were found in this event."
-msgstr "В этом мероприятии не найдено изображений."
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/EventImageSelectField.jsx
 msgid "Get new images"
-msgstr "Получить новые изображения"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Publish and send to registrant"
 msgid_plural "Publish and send to registrants"
-msgstr[0] "Опубликовать и отправить участнику"
-msgstr[1] "Опубликовать и отправить участникам"
-msgstr[2] "Опубликовать и отправить участникам"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Save and publish to registration"
 msgid_plural "Save and publish to registrations"
-msgstr[0] "Сохранить и опубликовать в регистрации"
-msgstr[1] "Сохранить и опубликовать в регистрациях"
-msgstr[2] "Сохранить и опубликовать в регистрациях"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Save and send to registrant"
 msgid_plural "Save and send to registrants"
-msgstr[0] "Сохранить и отправить участнику"
-msgstr[1] "Сохранить и отправить участникам"
-msgstr[2] "Сохранить и отправить участникам"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Save to registration"
 msgid_plural "Save to registrations"
-msgstr[0] "Сохранить в регистрации"
-msgstr[1] "Сохранить в регистрациях"
-msgstr[2] "Сохранить в регистрациях"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "as a single PDF document"
-msgstr "в виде единого PDF-документа"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "as a ZIP archive"
-msgstr "в виде ZIP-архива"
+msgstr ""
 
 #: indico/modules/receipts/__init__.py
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Generate Documents"
-msgstr "Сгенерировать документы"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Generating document for a single registrant"
 msgid_plural "Generating documents for {numberOfRegistrants} registrants"
-msgstr[0] "Создание документа для одного участника"
-msgstr[1] "Создание документов для {numberOfRegistrants} участников"
-msgstr[2] "Создание документов для {numberOfRegistrants} участников"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Successfully generated document for a single registrant"
 msgid_plural "Successfully generated {numberOfReceipts} documents"
-msgstr[0] "Документ успешно сгенерирован для одного зарегистрированного"
-msgstr[1] "Успешно сгенерировано {numberOfReceipts} документа"
-msgstr[2] "Успешно сгенерировано {numberOfReceipts} документов"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Document Template"
-msgstr "Шаблон документа"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Select a document template"
-msgstr "Выберите шаблон документа"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 #: indico/modules/receipts/client/js/templates/Previewer.jsx
 msgid "Template Parameters"
-msgstr "Параметры шаблона"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Filename"
@@ -6348,16 +6290,13 @@ msgstr "Имя файла"
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Remember settings"
-msgstr "Запомнить настройки"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid ""
 "Prefill template parameters (if present) and filename when generating more "
 "documents for the same template in this event."
 msgstr ""
-"Предварительно заполнять параметры шаблона (если они есть) и имя файла при "
-"создании большего количества документов для одного и того же шаблона в этом "
-"мероприятии."
 
 #: indico/modules/events/registration/templates/display/_registration_summary_blocks.html
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
@@ -6368,17 +6307,17 @@ msgstr "Опубликовать документ"
 msgid "Make the resulting document available on the registration page."
 msgid_plural ""
 "Make the resulting documents available on the registration pages."
-msgstr[0] "Сделать полученный документ доступным на странице регистрации."
-msgstr[1] "Сделать полученные документы доступными на страницах регистрации."
-msgstr[2] "Сделать полученные документы доступными на страницах регистрации."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Notify registrants via e-mail"
 msgid_plural "Notify registrants via e-mail"
-msgstr[0] "Уведомить зарегистрированных участников по электронной почте"
-msgstr[1] "Уведомить зарегистрированных участников по электронной почте"
-msgstr[2] "Уведомить зарегистрированных участников по электронной почте"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
@@ -6389,28 +6328,16 @@ msgid_plural ""
 "Send an e-mail to the registrants informing them that the document is "
 "available."
 msgstr[0] ""
-"Отправить зарегистрированному участнику электронное письмо с информацией о "
-"доступности документа."
 msgstr[1] ""
-"Отправить зарегистрированным участникам электронное письмо с информацией о "
-"доступности документа."
 msgstr[2] ""
-"Отправить зарегистрированным участникам электронное письмо с информацией о "
-"доступности документа."
 msgstr[3] ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Send an e-mail to the registrant with the document attached."
 msgid_plural "Send an e-mail to the registrants with the document attached."
 msgstr[0] ""
-"Отправить зарегистрированному участнику электронное письмо с прикрепленным "
-"документом."
 msgstr[1] ""
-"Отправить зарегистрированным участникам электронное письмо с прикрепленным "
-"документом."
 msgstr[2] ""
-"Отправить зарегистрированным участникам электронное письмо с прикрепленным "
-"документом."
 msgstr[3] ""
 
 #: indico/modules/attachments/templates/preview.html
@@ -6424,19 +6351,19 @@ msgstr "Загрузить"
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Please select a template to preview it..."
-msgstr "Пожалуйста, выберите шаблон для предварительного просмотра..."
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/print.jsx
 msgid "Templating Errors"
-msgstr "Ошибки шаблонизации"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/print.jsx
 msgid "There were some errors while trying to generate your documents."
-msgstr "Произошли некоторые ошибки при попытке создать ваши документы."
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/print.jsx
 msgid "Registrant's name"
-msgstr "Имя регистранта"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/print.jsx
 msgid "Missing fields"
@@ -6444,15 +6371,15 @@ msgstr "Отсутствуют поля"
 
 #: indico/modules/receipts/client/js/printing/print.jsx
 msgid "Generate anyway"
-msgstr "Сгенерировать в любом случае"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/Editor.jsx
 msgid "Default filename"
-msgstr "Имя файла по умолчанию"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/Previewer.jsx
 msgid "YAML Metadata"
-msgstr "YAML Metadata"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/Previewer.jsx
 msgid "HTML Code"
@@ -6460,25 +6387,23 @@ msgstr "HTML-код"
 
 #: indico/modules/receipts/client/js/templates/Previewer.jsx
 msgid "CSS Stylesheet"
-msgstr "CSS Stylesheet"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/Previewer.jsx
 msgid "Jinja Template"
-msgstr "Jinja Template"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/Previewer.jsx
 msgid "Sample parameters"
-msgstr "Примеры параметров"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/Previewer.jsx
 msgid "The preview is limited to a few registrations for performance reasons."
 msgstr ""
-"Предварительный просмотр ограничен несколькими регистрациями из соображений "
-"производительности."
 
 #: indico/modules/receipts/client/js/templates/TemplateListPane.jsx
 msgid "Receipt"
-msgstr "Чек"
+msgstr ""
 
 #: indico/modules/categories/forms.py
 #: indico/modules/receipts/client/js/templates/TemplateListPane.jsx
@@ -6487,15 +6412,15 @@ msgstr "Сертификат"
 
 #: indico/modules/receipts/client/js/templates/TemplateListPane.jsx
 msgid "from event {title}"
-msgstr "из события {title}"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/TemplateListPane.jsx
 msgid "from category {title}"
-msgstr "из категории {title}"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/TemplateListPane.jsx
 msgid "Preview template"
-msgstr "Предварительный просмотр шаблона"
+msgstr ""
 
 #: indico/modules/designer/templates/_list.html
 #: indico/modules/receipts/client/js/templates/TemplateListPane.jsx
@@ -6504,7 +6429,7 @@ msgstr "Редактировать шаблон"
 
 #: indico/modules/receipts/client/js/templates/TemplateListPane.jsx
 msgid "Clone template"
-msgstr "Клонировать шаблон"
+msgstr ""
 
 #: indico/modules/designer/templates/_list.html
 #: indico/modules/events/abstracts/templates/management/_notification_tpl_list.html
@@ -6514,7 +6439,7 @@ msgstr "Удалить шаблон"
 
 #: indico/modules/receipts/client/js/templates/TemplateListPane.jsx
 msgid "Are you sure you want to delete the template {template}?"
-msgstr "Вы уверены, что хотите удалить шаблон {template}?"
+msgstr ""
 
 #: indico/modules/designer/templates/_list.html
 #: indico/modules/designer/templates/backside_list.html
@@ -6524,7 +6449,7 @@ msgstr "Унаследованные шаблоны"
 
 #: indico/modules/receipts/client/js/templates/TemplateListPane.jsx
 msgid "Other templates"
-msgstr "Другие шаблоны"
+msgstr ""
 
 #: indico/modules/designer/templates/_list.html
 #: indico/modules/designer/templates/backside_list.html
@@ -6534,7 +6459,7 @@ msgstr "Пользовательские шаблоны"
 
 #: indico/modules/receipts/client/js/templates/TemplateListPane.jsx
 msgid "Add a new template"
-msgstr "Добавить новый шаблон"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/TemplateListPane.jsx
 msgid "Blank template"
@@ -6548,23 +6473,23 @@ msgstr "Нет шаблонов"
 
 #: indico/modules/receipts/client/js/templates/TemplateManagement.jsx
 msgid "Template \"{title}\" was added"
-msgstr "Шаблон \"{title}\" был добавлен"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/TemplateManagement.jsx
 msgid "Template \"{title}\" was updated"
-msgstr "Шаблон \"{title}\" был обновлен"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/TemplateManagement.jsx
 msgid "Template deleted"
-msgstr "Шаблон удален"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/TemplatePane.jsx
 msgid "Add document template"
-msgstr "Добавить шаблон документа"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/TemplatePane.jsx
 msgid "Edit document template"
-msgstr "Редактировать шаблон документа"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/TemplatePane.jsx
 msgid "Start writing a template to see the preview here..."
@@ -6572,15 +6497,15 @@ msgstr "Начните составлять шаблон, чтобы увиде�
 
 #: indico/modules/search/client/js/components/ResultList.jsx
 msgid "⟨ Previous page"
-msgstr "⟨ Предыдущая страница"
+msgstr ""
 
 #: indico/modules/search/client/js/components/ResultList.jsx
 msgid "Next page ⟩"
-msgstr "Следующая страница ⟩"
+msgstr ""
 
 #: indico/modules/search/client/js/components/SearchApp.jsx
 msgid "{title} (loading results)"
-msgstr "{title} (загрузка результатов)"
+msgstr ""
 
 #: indico/modules/search/client/js/components/SearchApp.jsx
 msgid "{title} (no results)"
@@ -6595,8 +6520,6 @@ msgid ""
 "Enter a term above to begin searching inside the {categoryTitle} category. "
 "You can {link}search all of Indico instead{/link}."
 msgstr ""
-"Введите термин выше, чтобы начать поиск внутри категории {categoryTitle}. Вы"
-" можете {link}искать по всему Indico{/link}."
 
 #: indico/modules/search/client/js/components/SearchApp.jsx
 msgid "No Results"
@@ -6631,7 +6554,7 @@ msgstr "Материалы"
 #: indico/modules/search/client/js/components/SearchApp.jsx
 #: indico/modules/search/client/js/components/results/EventNote.jsx
 msgid "Notes"
-msgstr "Заметки"
+msgstr ""
 
 #: indico/modules/categories/templates/management/content.html
 #: indico/modules/search/client/js/components/SearchApp.jsx
@@ -6642,7 +6565,7 @@ msgstr "Категории"
 #: indico/modules/search/client/js/components/SearchApp.jsx
 #: indico/modules/search/client/js/components/SearchBox.jsx
 msgid "ADMIN"
-msgstr "ADMIN"
+msgstr ""
 
 #: indico/modules/search/client/js/components/SearchApp.jsx
 #: indico/modules/search/client/js/components/SearchBox.jsx

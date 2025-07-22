@@ -6054,27 +6054,27 @@ msgstr "Показать список всех предстоящих брони
 
 #: indico/modules/rb/client/js/modules/calendar/CalendarListView.jsx
 msgid "Link event"
-msgstr "Связать мероприятие"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/calendar/CalendarListView.jsx
 msgid "Are you sure you want to link this event?"
-msgstr "Вы уверены, что хотите связать это мероприятие?"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/calendar/CalendarListView.jsx
 msgid "Link to {bookedFor}"
-msgstr "Связать с {bookedFor}"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/calendar/CalendarListView.jsx
 msgid "This booking is pending confirmation by the room owner"
-msgstr "Это бронирование ожидает подтверждения от владельца комнаты"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/calendar/CalendarListView.jsx
 msgid "Booked for {bookedFor}"
-msgstr "Забронировано для {bookedFor}"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/calendar/CalendarListView.jsx
 msgid "Already linked"
-msgstr "Уже связано"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/calendar/CalendarListView.jsx
 msgid "There are no bookings matching the criteria."
@@ -6106,7 +6106,7 @@ msgstr "Активных заявок на бронирование"
 
 #: indico/modules/rb/client/js/modules/landing/UpcomingBookings.jsx
 msgid "Your bookings"
-msgstr "Ваши бронирования"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/roomList/RoomFilterBar.jsx
 msgid "Equipment"
@@ -6127,11 +6127,11 @@ msgstr "Показать только..."
 
 #: indico/modules/rb/client/js/modules/roomList/RoomList.jsx
 msgid "Deselect all rooms"
-msgstr "Снять выбор со всех комнат"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/roomList/RoomList.jsx
 msgid "Select all rooms"
-msgstr "Выбрать все комнаты"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/roomList/RoomList.jsx
 msgid "Block rooms"
@@ -6139,7 +6139,7 @@ msgstr "Заблокировать помещения"
 
 #: indico/modules/rb/client/js/modules/roomList/RoomList.jsx
 msgid "There are no rooms matching the criteria"
-msgstr "Нет комнат, соответствующих критериям"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/roomList/RoomList.jsx
 msgid "There is {count} match"
@@ -6155,7 +6155,7 @@ msgstr "Здание {buildingNumber}"
 
 #: indico/modules/rb/client/js/modules/roomList/filters/EquipmentForm.jsx
 msgid "See detailed equipment"
-msgstr "Смотреть подробное оборудование"
+msgstr ""
 
 #: indico/modules/rb/client/js/modules/roomList/filters/ShowOnlyForm.jsx
 msgid "My favorite rooms"
@@ -6204,15 +6204,15 @@ msgstr "Конфликт"
 
 #: indico/modules/rb/client/js/util.jsx
 msgid "Conflict with Pre-Booking"
-msgstr "Конфликт с предварительным бронированием"
+msgstr ""
 
 #: indico/modules/rb/client/js/util.jsx
 msgid "Invalid occurrence"
-msgstr "Недопустимое повторение"
+msgstr ""
 
 #: indico/modules/rb/client/js/util.jsx
 msgid "Other booking"
-msgstr "Другое бронирование"
+msgstr ""
 
 #: indico/modules/rb/client/js/util.jsx
 msgid "Blocking"
@@ -6228,11 +6228,11 @@ msgstr "Невозможно забронировать"
 
 #: indico/modules/rb/client/js/util.jsx
 msgid "Concurrent Pre-Bookings"
-msgstr "Параллельные предварительные бронирования"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/EventImageSelectField.jsx
 msgid "from Images"
-msgstr "из Images"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/EventImageSelectField.jsx
 msgid "from Materials"
@@ -6240,7 +6240,7 @@ msgstr "из материалов"
 
 #: indico/modules/receipts/client/js/printing/EventImageSelectField.jsx
 msgid "from Indico"
-msgstr "из Indico"
+msgstr ""
 
 #: indico/modules/designer/placeholders.py
 #: indico/modules/events/layout/templates/layout_conference.html
@@ -6250,97 +6250,97 @@ msgstr "Логотип мероприятия"
 
 #: indico/modules/receipts/client/js/printing/EventImageSelectField.jsx
 msgid "This field only accepts jpg, png, gif and webp picture formats."
-msgstr "Это поле принимает только форматы изображений jpg, png, gif и webp."
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/EventImageSelectField.jsx
 msgid "Select an image from the event"
-msgstr "Выберите изображение из мероприятия"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/EventImageSelectField.jsx
 msgid "Loading images..."
-msgstr "Загрузка изображений..."
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/EventImageSelectField.jsx
 msgid "No images were found in this event."
-msgstr "В этом мероприятии не найдено изображений."
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/EventImageSelectField.jsx
 msgid "Get new images"
-msgstr "Получить новые изображения"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Publish and send to registrant"
 msgid_plural "Publish and send to registrants"
-msgstr[0] "Опубликовать и отправить участнику"
-msgstr[1] "Опубликовать и отправить участникам"
-msgstr[2] "Опубликовать и отправить участникам"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Save and publish to registration"
 msgid_plural "Save and publish to registrations"
-msgstr[0] "Сохранить и опубликовать в регистрации"
-msgstr[1] "Сохранить и опубликовать в регистрациях"
-msgstr[2] "Сохранить и опубликовать в регистрациях"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Save and send to registrant"
 msgid_plural "Save and send to registrants"
-msgstr[0] "Сохранить и отправить участнику"
-msgstr[1] "Сохранить и отправить участникам"
-msgstr[2] "Сохранить и отправить участникам"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Save to registration"
 msgid_plural "Save to registrations"
-msgstr[0] "Сохранить в регистрации"
-msgstr[1] "Сохранить в регистрациях"
-msgstr[2] "Сохранить в регистрациях"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "as a single PDF document"
-msgstr "в виде единого PDF-документа"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "as a ZIP archive"
-msgstr "в виде ZIP-архива"
+msgstr ""
 
 #: indico/modules/receipts/__init__.py
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Generate Documents"
-msgstr "Сгенерировать документы"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Generating document for a single registrant"
 msgid_plural "Generating documents for {numberOfRegistrants} registrants"
-msgstr[0] "Создание документа для одного участника"
-msgstr[1] "Создание документов для {numberOfRegistrants} участников"
-msgstr[2] "Создание документов для {numberOfRegistrants} участников"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Successfully generated document for a single registrant"
 msgid_plural "Successfully generated {numberOfReceipts} documents"
-msgstr[0] "Документ успешно сгенерирован для одного зарегистрированного"
-msgstr[1] "Успешно сгенерировано {numberOfReceipts} документа"
-msgstr[2] "Успешно сгенерировано {numberOfReceipts} документов"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Document Template"
-msgstr "Шаблон документа"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Select a document template"
-msgstr "Выберите шаблон документа"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 #: indico/modules/receipts/client/js/templates/Previewer.jsx
 msgid "Template Parameters"
-msgstr "Параметры шаблона"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Filename"
@@ -6348,16 +6348,13 @@ msgstr "Имя файла"
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Remember settings"
-msgstr "Запомнить настройки"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid ""
 "Prefill template parameters (if present) and filename when generating more "
 "documents for the same template in this event."
 msgstr ""
-"Предварительно заполнять параметры шаблона (если они есть) и имя файла при "
-"создании большего количества документов для одного и того же шаблона в этом "
-"мероприятии."
 
 #: indico/modules/events/registration/templates/display/_registration_summary_blocks.html
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
@@ -6368,17 +6365,17 @@ msgstr "Опубликовать документ"
 msgid "Make the resulting document available on the registration page."
 msgid_plural ""
 "Make the resulting documents available on the registration pages."
-msgstr[0] "Сделать полученный документ доступным на странице регистрации."
-msgstr[1] "Сделать полученные документы доступными на страницах регистрации."
-msgstr[2] "Сделать полученные документы доступными на страницах регистрации."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Notify registrants via e-mail"
 msgid_plural "Notify registrants via e-mail"
-msgstr[0] "Уведомить зарегистрированных участников по электронной почте"
-msgstr[1] "Уведомить зарегистрированных участников по электронной почте"
-msgstr[2] "Уведомить зарегистрированных участников по электронной почте"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
@@ -6389,28 +6386,16 @@ msgid_plural ""
 "Send an e-mail to the registrants informing them that the document is "
 "available."
 msgstr[0] ""
-"Отправить зарегистрированному участнику электронное письмо с информацией о "
-"доступности документа."
 msgstr[1] ""
-"Отправить зарегистрированным участникам электронное письмо с информацией о "
-"доступности документа."
 msgstr[2] ""
-"Отправить зарегистрированным участникам электронное письмо с информацией о "
-"доступности документа."
 msgstr[3] ""
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Send an e-mail to the registrant with the document attached."
 msgid_plural "Send an e-mail to the registrants with the document attached."
 msgstr[0] ""
-"Отправить зарегистрированному участнику электронное письмо с прикрепленным "
-"документом."
 msgstr[1] ""
-"Отправить зарегистрированным участникам электронное письмо с прикрепленным "
-"документом."
 msgstr[2] ""
-"Отправить зарегистрированным участникам электронное письмо с прикрепленным "
-"документом."
 msgstr[3] ""
 
 #: indico/modules/attachments/templates/preview.html
@@ -6424,19 +6409,19 @@ msgstr "Загрузить"
 
 #: indico/modules/receipts/client/js/printing/PrintReceiptsModal.jsx
 msgid "Please select a template to preview it..."
-msgstr "Пожалуйста, выберите шаблон для предварительного просмотра..."
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/print.jsx
 msgid "Templating Errors"
-msgstr "Ошибки шаблонизации"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/print.jsx
 msgid "There were some errors while trying to generate your documents."
-msgstr "Произошли некоторые ошибки при попытке создать ваши документы."
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/print.jsx
 msgid "Registrant's name"
-msgstr "Имя регистранта"
+msgstr ""
 
 #: indico/modules/receipts/client/js/printing/print.jsx
 msgid "Missing fields"
@@ -6444,15 +6429,15 @@ msgstr "Отсутствуют поля"
 
 #: indico/modules/receipts/client/js/printing/print.jsx
 msgid "Generate anyway"
-msgstr "Сгенерировать в любом случае"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/Editor.jsx
 msgid "Default filename"
-msgstr "Имя файла по умолчанию"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/Previewer.jsx
 msgid "YAML Metadata"
-msgstr "YAML Metadata"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/Previewer.jsx
 msgid "HTML Code"
@@ -6460,25 +6445,23 @@ msgstr "HTML-код"
 
 #: indico/modules/receipts/client/js/templates/Previewer.jsx
 msgid "CSS Stylesheet"
-msgstr "CSS Stylesheet"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/Previewer.jsx
 msgid "Jinja Template"
-msgstr "Jinja Template"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/Previewer.jsx
 msgid "Sample parameters"
-msgstr "Примеры параметров"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/Previewer.jsx
 msgid "The preview is limited to a few registrations for performance reasons."
 msgstr ""
-"Предварительный просмотр ограничен несколькими регистрациями из соображений "
-"производительности."
 
 #: indico/modules/receipts/client/js/templates/TemplateListPane.jsx
 msgid "Receipt"
-msgstr "Чек"
+msgstr ""
 
 #: indico/modules/categories/forms.py
 #: indico/modules/receipts/client/js/templates/TemplateListPane.jsx
@@ -6487,15 +6470,15 @@ msgstr "Сертификат"
 
 #: indico/modules/receipts/client/js/templates/TemplateListPane.jsx
 msgid "from event {title}"
-msgstr "из события {title}"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/TemplateListPane.jsx
 msgid "from category {title}"
-msgstr "из категории {title}"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/TemplateListPane.jsx
 msgid "Preview template"
-msgstr "Предварительный просмотр шаблона"
+msgstr ""
 
 #: indico/modules/designer/templates/_list.html
 #: indico/modules/receipts/client/js/templates/TemplateListPane.jsx
@@ -6504,7 +6487,7 @@ msgstr "Редактировать шаблон"
 
 #: indico/modules/receipts/client/js/templates/TemplateListPane.jsx
 msgid "Clone template"
-msgstr "Клонировать шаблон"
+msgstr ""
 
 #: indico/modules/designer/templates/_list.html
 #: indico/modules/events/abstracts/templates/management/_notification_tpl_list.html
@@ -6514,7 +6497,7 @@ msgstr "Удалить шаблон"
 
 #: indico/modules/receipts/client/js/templates/TemplateListPane.jsx
 msgid "Are you sure you want to delete the template {template}?"
-msgstr "Вы уверены, что хотите удалить шаблон {template}?"
+msgstr ""
 
 #: indico/modules/designer/templates/_list.html
 #: indico/modules/designer/templates/backside_list.html
@@ -6524,7 +6507,7 @@ msgstr "Унаследованные шаблоны"
 
 #: indico/modules/receipts/client/js/templates/TemplateListPane.jsx
 msgid "Other templates"
-msgstr "Другие шаблоны"
+msgstr ""
 
 #: indico/modules/designer/templates/_list.html
 #: indico/modules/designer/templates/backside_list.html
@@ -6534,7 +6517,7 @@ msgstr "Пользовательские шаблоны"
 
 #: indico/modules/receipts/client/js/templates/TemplateListPane.jsx
 msgid "Add a new template"
-msgstr "Добавить новый шаблон"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/TemplateListPane.jsx
 msgid "Blank template"
@@ -6548,23 +6531,23 @@ msgstr "Нет шаблонов"
 
 #: indico/modules/receipts/client/js/templates/TemplateManagement.jsx
 msgid "Template \"{title}\" was added"
-msgstr "Шаблон \"{title}\" был добавлен"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/TemplateManagement.jsx
 msgid "Template \"{title}\" was updated"
-msgstr "Шаблон \"{title}\" был обновлен"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/TemplateManagement.jsx
 msgid "Template deleted"
-msgstr "Шаблон удален"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/TemplatePane.jsx
 msgid "Add document template"
-msgstr "Добавить шаблон документа"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/TemplatePane.jsx
 msgid "Edit document template"
-msgstr "Редактировать шаблон документа"
+msgstr ""
 
 #: indico/modules/receipts/client/js/templates/TemplatePane.jsx
 msgid "Start writing a template to see the preview here..."
@@ -6572,15 +6555,15 @@ msgstr "Начните составлять шаблон, чтобы увиде�
 
 #: indico/modules/search/client/js/components/ResultList.jsx
 msgid "⟨ Previous page"
-msgstr "⟨ Предыдущая страница"
+msgstr ""
 
 #: indico/modules/search/client/js/components/ResultList.jsx
 msgid "Next page ⟩"
-msgstr "Следующая страница ⟩"
+msgstr ""
 
 #: indico/modules/search/client/js/components/SearchApp.jsx
 msgid "{title} (loading results)"
-msgstr "{title} (загрузка результатов)"
+msgstr ""
 
 #: indico/modules/search/client/js/components/SearchApp.jsx
 msgid "{title} (no results)"
@@ -6595,8 +6578,6 @@ msgid ""
 "Enter a term above to begin searching inside the {categoryTitle} category. "
 "You can {link}search all of Indico instead{/link}."
 msgstr ""
-"Введите термин выше, чтобы начать поиск внутри категории {categoryTitle}. Вы"
-" можете {link}искать по всему Indico{/link}."
 
 #: indico/modules/search/client/js/components/SearchApp.jsx
 msgid "No Results"
@@ -6631,7 +6612,7 @@ msgstr "Материалы"
 #: indico/modules/search/client/js/components/SearchApp.jsx
 #: indico/modules/search/client/js/components/results/EventNote.jsx
 msgid "Notes"
-msgstr "Заметки"
+msgstr ""
 
 #: indico/modules/categories/templates/management/content.html
 #: indico/modules/search/client/js/components/SearchApp.jsx
@@ -6642,7 +6623,7 @@ msgstr "Категории"
 #: indico/modules/search/client/js/components/SearchApp.jsx
 #: indico/modules/search/client/js/components/SearchBox.jsx
 msgid "ADMIN"
-msgstr "ADMIN"
+msgstr ""
 
 #: indico/modules/search/client/js/components/SearchApp.jsx
 #: indico/modules/search/client/js/components/SearchBox.jsx

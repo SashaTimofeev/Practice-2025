@@ -6,8 +6,9 @@ import polib
 from pathlib import Path
 from datetime import datetime
 from tqdm import tqdm
-from translator import GeminiTranslator  # Убедитесь, что импорт правильный
+from translator import GeminiTranslator
 import logging
+import msvcrt
 
 logger = logging.getLogger(__name__)
 
@@ -18,6 +19,7 @@ class TranslationManager:
         self.backup_dir = "backups"
         self.ensure_backup_dir()
         self.modified_entries = set()
+        self.translation_interrupted = False
 
     def ensure_backup_dir(self):
         """Создаем директорию для бэкапов, если её нет"""
@@ -189,8 +191,16 @@ class TranslationManager:
             logger.error(f"Ошибка при обработке перевода для '{entry.msgid}': {e}", exc_info=True)
             return False
 
+    def _check_key_press(self):
+        """Проверяет нажатие клавиш Esc или Enter"""
+        if msvcrt.kbhit():
+            key = msvcrt.getch()
+            if key in (b'\x1b', b'\r', b'\n'):  # Esc, Enter
+                return True
+        return False
+
     def translate_entries(self, po, entries_to_translate, batch_size_override=None):
-        """Переводим непереведенные записи пакетами"""
+        """Переводим непереведенные записи пакетами с возможностью прерывания"""
         if not entries_to_translate:
             print("Нет строк для перевода!")
             return 0
@@ -199,6 +209,7 @@ class TranslationManager:
             entries_to_translate = entries_to_translate[:batch_size_override]
 
         print(f"\nНачинаем перевод {len(entries_to_translate)} строк...")
+        print("Нажмите Esc, Enter или Ctrl+C для прерывания перевода")
         
         entries_to_process = [e for e in entries_to_translate if e.msgid.strip()]
         if not entries_to_process:
@@ -208,39 +219,55 @@ class TranslationManager:
         translated_count = 0
         batch_size = self.translator.BATCH_SIZE
         total_entries = len(entries_to_process)
+        self.translation_interrupted = False
         
-        with tqdm(total=total_entries, desc="Перевод строк") as pbar:
-            for i in range(0, total_entries, batch_size):
-                batch_entries = entries_to_process[i:i + batch_size]
-                
-                batch_to_translate = []
-                for entry in batch_entries:
-                    # ПРАВИЛЬНАЯ ПРОВЕРКА: не hasattr, а просто if entry.msgid_plural
-                    if entry.msgid_plural:
-                        # Это настоящая множественная запись
-                        batch_to_translate.append({
-                            'msgid': entry.msgid,
-                            'msgid_plural': entry.msgid_plural
-                        })
-                    else:
-                        # Это обычная запись
-                        batch_to_translate.append(entry.msgid)
-                
-                try:
-                    translations = self.translator.translate_batch(batch_to_translate)
+        try:
+            with tqdm(total=total_entries, desc="Перевод строк") as pbar:
+                for i in range(0, total_entries, batch_size):
+                    # Проверяем нажатие клавиш
+                    if self._check_key_press():
+                        print("\nОбнаружено прерывание пользователем...")
+                        self.translation_interrupted = True
+                        break
+                        
+                    batch_entries = entries_to_process[i:i + batch_size]
                     
-                    for entry, translation in zip(batch_entries, translations):
-                        if self._process_translation_result(entry, translation):
-                            translated_count += 1
-                            if 'fuzzy' in entry.flags:
-                                entry.flags.remove('fuzzy')
-                            
-                except Exception as e:
-                    logger.error(f"Ошибка при пакетном переводе: {e}", exc_info=True)
-                
-                pbar.update(len(batch_entries))
-                pbar.set_postfix({'переведено': f"{translated_count}/{pbar.n}"})
-                
+                    batch_to_translate = []
+                    for entry in batch_entries:
+                        if entry.msgid_plural:
+                            batch_to_translate.append({
+                                'msgid': entry.msgid,
+                                'msgid_plural': entry.msgid_plural
+                            })
+                        else:
+                            batch_to_translate.append(entry.msgid)
+                    
+                    try:
+                        translations = self.translator.translate_batch(batch_to_translate)
+                        
+                        for entry, translation in zip(batch_entries, translations):
+                            if self._process_translation_result(entry, translation):
+                                translated_count += 1
+                                if 'fuzzy' in entry.flags:
+                                    entry.flags.remove('fuzzy')
+                                
+                    except Exception as e:
+                        logger.error(f"Ошибка при пакетном переводе: {e}", exc_info=True)
+                        # Продолжаем со следующим пакетом, если произошла ошибка
+                        continue
+                    
+                    pbar.update(len(batch_entries))
+                    pbar.set_postfix({'переведено': f"{translated_count}/{pbar.n}"})
+                    
+        except KeyboardInterrupt:
+            print("\nПеревод прерван пользователем (Ctrl+C)")
+            self.translation_interrupted = True
+        
+        if self.translation_interrupted:
+            print(f"\nПеревод прерван. Успешно переведено {translated_count} строк.")
+        else:
+            print(f"\nПеревод завершен. Всего переведено: {translated_count} строк.")
+            
         return translated_count
 
     def save_po_file(self, po, file_path):
@@ -255,7 +282,7 @@ class TranslationManager:
             self.create_backup(file_path)
             
             logger.info(f"Попытка сохранения файла: {file_path}")
-            po.save(file_path) # Используем стандартный save, он должен сам справиться с переносами строк
+            po.save(file_path) 
             
             # Сбрасываем флаги изменений после успешного сохранения
             for entry in po:
@@ -275,11 +302,6 @@ class TranslationManager:
             logger.error(error_msg, exc_info=True)
             return False
 
-    # ... Остальные методы TranslationManager (has_unsaved_changes, view_and_edit_unsaved, process_file, etc.)
-    # можно оставить без изменений, так как они в основном зависят от исправленных методов.
-    # Просто убедитесь, что в классе остался только один метод save_po_file.
-    
-    # ... (скопируйте сюда остальные методы вашего класса TranslationManager без изменений)
     def has_unsaved_changes(self, po):
         """Проверяем, есть ли несохраненные изменения"""
         for entry in po:
@@ -300,8 +322,6 @@ class TranslationManager:
                     
         return False
 
-    # ... скопируйте сюда остальные методы: get_modified_entries, view_and_edit_unsaved,
-    # ensure_original_backup, process_file, get_po_file_path, run
     def get_modified_entries(self, po):
         """Получаем список измененных, но не сохраненных записей"""
         modified = []
@@ -309,7 +329,6 @@ class TranslationManager:
             if hasattr(entry, 'original_msgstr') and entry.msgstr != entry.original_msgstr:
                 modified.append(entry)
             elif hasattr(entry, 'original_msgstr_plural'):
-                # Проверяем изменения во множественных формах
                 if not hasattr(entry, 'msgstr_plural') or entry.msgstr_plural != entry.original_msgstr_plural:
                     modified.append(entry)
         return modified
@@ -323,13 +342,12 @@ class TranslationManager:
             return
             
         while True:
-            # Выводим список несохраненных изменений
             print("\n=== Несохраненные изменения ===")
             for i, entry in enumerate(modified_entries, 1):
                 print(f"{i}. [Исходный] {entry.msgid[:80]}{'...' if len(entry.msgid) > 80 else ''}")
                 print(f"   [Перевод]  {entry.msgstr[:80]}{'...' if len(entry.msgstr) > 80 else ''}\n")
             
-            # Запрашиваем номер строки для редактирования
+            
             while True:
                 choice = input("\nВведите номер строки для редактирования (или Enter для выхода): ").strip()
                 if not choice:
@@ -447,11 +465,12 @@ class TranslationManager:
                         continue
                         
                     translated_count = self.translate_entries(po, untranslated, batch_size_override)
-                    print(f"\nУспешно переведено {translated_count} строк.")
                     
-                    # Обновляем статистику
-                    stats = self.get_translation_stats(po)
-                    self.print_stats(stats)
+                    # Обновляем статистику, только если перевод не был прерван
+                    if not self.translation_interrupted:
+                        print(f"\nУспешно переведено {translated_count} строк.")
+                        stats = self.get_translation_stats(po)
+                        self.print_stats(stats)
                     
                 except ValueError:
                     print("Некорректный ввод!")
@@ -477,7 +496,6 @@ class TranslationManager:
 
     def get_po_file_path(self):
         """Получаем путь к PO файлу из переменных окружения или запрашиваем у пользователя"""
-        # ... этот метод можно оставить без изменений ...
         file_path = os.getenv('PO_FILE_PATH', '').strip()
         
         if file_path and os.path.isfile(file_path):
@@ -538,8 +556,8 @@ class TranslationManager:
             
             self.process_file(file_path)
 
-            another = input("\nХотите обработать другой файл? (Y/n): ").strip().lower()
-            if another == 'n':
+            another = input("\nХотите обработать другой файл? (y/N): ").strip().lower()
+            if another != 'y':
                 break
         
-        print("Выход из программы.")
+        print("\nРабота завершена.")

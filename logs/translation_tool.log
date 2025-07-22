@@ -1581,3 +1581,112 @@ NameError: name 'texts' is not defined. Did you mean: 'next'?
 2025-07-22 23:36:36,079 - translation_manager - INFO - Файл успешно сохранен: for_translation_indico_core-messages-all_ru_RU-2.po
 2025-07-22 23:38:54,472 - __main__ - INFO - 
 Работа программы прервана пользователем
+2025-07-22 23:50:19,368 - utils.logger - INFO - Логирование инициализировано. Уровень: INFO. Файл: logs\translation_tool.log
+2025-07-22 23:50:19,477 - translation_manager - INFO - Успешно загружен файл: for_translation_indico_core-messages-all_ru_RU-2.po
+2025-07-22 23:50:37,951 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-22 23:50:41,224 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-22 23:50:44,426 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-22 23:50:47,209 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-22 23:50:49,634 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-22 23:50:52,012 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-22 23:50:54,722 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-22 23:50:57,191 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-22 23:50:59,614 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-22 23:51:02,307 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-22 23:51:05,233 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-22 23:51:08,697 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-22 23:51:11,635 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-22 23:51:15,188 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-22 23:51:18,567 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-22 23:51:21,818 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-22 23:51:21,957 - translator - ERROR - Ошибка при переводе пакета (попытка 1/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 38
+}
+]
+2025-07-22 23:51:27,092 - translator - ERROR - Ошибка при переводе пакета (попытка 2/3): 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 15
+}
+, links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, retry_delay {
+  seconds: 33
+}
+]
+2025-07-22 23:51:39,912 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-22 23:51:44,093 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-22 23:51:47,391 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-22 23:51:51,077 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-22 23:52:06,906 - translation_manager - INFO - Создана резервная копия: backups\for_translation_indico_core-messages-all_ru_RU-2_20250722_235206.po
+2025-07-22 23:52:06,906 - translation_manager - INFO - Попытка сохранения файла: for_translation_indico_core-messages-all_ru_RU-2.po
+2025-07-22 23:52:07,048 - translation_manager - INFO - Файл успешно сохранен: for_translation_indico_core-messages-all_ru_RU-2.po
+2025-07-23 00:19:52,326 - __main__ - INFO - 
+Работа программы прервана пользователем
+2025-07-23 00:19:57,046 - utils.logger - INFO - Логирование инициализировано. Уровень: INFO. Файл: logs\translation_tool.log
+2025-07-23 00:19:57,159 - translation_manager - INFO - Успешно загружен файл: for_translation_indico_core-messages-all_ru_RU-2.po
+2025-07-23 00:20:06,385 - translation_manager - INFO - Создана резервная копия: backups\for_translation_indico_core-messages-all_ru_RU-2_20250723_002006.po
+2025-07-23 00:20:06,385 - translation_manager - INFO - Попытка сохранения файла: for_translation_indico_core-messages-all_ru_RU-2.po
+2025-07-23 00:20:06,524 - translation_manager - INFO - Файл успешно сохранен: for_translation_indico_core-messages-all_ru_RU-2.po
+2025-07-23 00:27:56,707 - __main__ - INFO - 
+Работа программы прервана пользователем
+2025-07-23 00:27:59,236 - utils.logger - INFO - Логирование инициализировано. Уровень: INFO. Файл: logs\translation_tool.log
+2025-07-23 00:27:59,344 - translation_manager - INFO - Успешно загружен файл: for_translation_indico_core-messages-all_ru_RU-2.po
+2025-07-23 00:28:06,230 - __main__ - ERROR - Произошла непредвиденная ошибка
+Traceback (most recent call last):
+  File "C:\dev\my\kurs2025\main.py", line 31, in main
+    manager.run()
+    ~~~~~~~~~~~^^
+  File "C:\dev\my\kurs2025\translation_manager.py", line 565, in run
+    self.process_file(file_path)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\dev\my\kurs2025\translation_manager.py", line 475, in process_file
+    translated_count = self.translate_entries(po, untranslated, batch_size_override)
+  File "C:\dev\my\kurs2025\translation_manager.py", line 227, in translate_entries
+    if self._check_key_press():
+       ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\dev\my\kurs2025\translation_manager.py", line 195, in _check_key_press
+    if msvcrt.kbhit():
+       ^^^^^^
+NameError: name 'msvcrt' is not defined. Did you forget to import 'msvcrt'?
+2025-07-23 00:29:06,152 - utils.logger - INFO - Логирование инициализировано. Уровень: INFO. Файл: logs\translation_tool.log
+2025-07-23 00:29:06,266 - translation_manager - INFO - Успешно загружен файл: for_translation_indico_core-messages-all_ru_RU-2.po
+2025-07-23 00:29:15,046 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-23 00:29:17,893 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-23 00:29:50,809 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-23 00:29:55,486 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-23 00:29:58,402 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-23 00:30:01,330 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-23 00:30:03,863 - translator - INFO - Успешно переведено и обработано 10 строк.
+2025-07-23 00:30:26,886 - translation_manager - INFO - Создана резервная копия: backups\for_translation_indico_core-messages-all_ru_RU-2_20250723_003026.po
+2025-07-23 00:30:26,886 - translation_manager - INFO - Попытка сохранения файла: for_translation_indico_core-messages-all_ru_RU-2.po
+2025-07-23 00:30:27,026 - translation_manager - INFO - Файл успешно сохранен: for_translation_indico_core-messages-all_ru_RU-2.po
+2025-07-23 00:33:32,139 - utils.logger - INFO - Логирование инициализировано. Уровень: INFO. Файл: logs\translation_tool.log
+2025-07-23 00:33:32,251 - translation_manager - INFO - Успешно загружен файл: for_translation_indico_core-messages-all_ru_RU-2.po
