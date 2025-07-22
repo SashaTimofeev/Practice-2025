@@ -2391,8 +2391,6 @@ msgid ""
 "Do you really want to delete this series? The associated events will not be "
 "deleted."
 msgstr ""
-"Вы действительно хотите удалить эту серию? Связанные события не будут "
-"удалены."
 
 #: indico/modules/events/management/client/js/SeriesManagement.jsx
 msgid "No event found with this ID."
@@ -2400,32 +2398,32 @@ msgstr "Не найдено мероприятий с этим идентифи�
 
 #: indico/modules/events/management/client/js/SeriesManagement.jsx
 msgid "You don't have rights to access this event."
-msgstr "У вас нет прав для доступа к этому событию."
+msgstr ""
 
 #: indico/modules/events/management/client/js/SeriesManagement.jsx
 msgid "This event is unlisted."
-msgstr "Это событие не включено в список."
+msgstr ""
 
 #: indico/modules/events/management/client/js/SeriesManagement.jsx
 #: indico/modules/users/client/js/Favorites.jsx
 msgid "Unlisted"
-msgstr "Не в списке"
+msgstr ""
 
 #: indico/modules/events/management/client/js/SeriesManagement.jsx
 msgid "You do not have editing rights for this event."
-msgstr "У вас нет прав на редактирование этого мероприятия."
+msgstr ""
 
 #: indico/modules/events/management/client/js/SeriesManagement.jsx
 msgid "This event is already part of a different series."
-msgstr "Это мероприятие уже является частью другой серии."
+msgstr ""
 
 #: indico/modules/events/management/client/js/SeriesManagement.jsx
 msgid "This event is already part of this series."
-msgstr "Это мероприятие уже является частью этой серии."
+msgstr ""
 
 #: indico/modules/events/management/client/js/SeriesManagement.jsx
 msgid "Load more"
-msgstr "Загрузить еще"
+msgstr ""
 
 #: indico/modules/events/management/client/js/SeriesManagement.jsx
 msgid "Search for an event title or paste an event URL or event ID (#123)"
@@ -2433,7 +2431,7 @@ msgstr "Введите название события, вставьте ссы�
 
 #: indico/modules/events/management/client/js/SeriesManagement.jsx
 msgid "Searching..."
-msgstr "Поиск..."
+msgstr ""
 
 #: indico/modules/events/management/client/js/SeriesManagement.jsx
 msgid "No results found."
@@ -2480,7 +2478,7 @@ msgstr "Требуются правки"
 #: indico/modules/events/papers/client/js/components/GroupReviewForm.jsx
 #: indico/modules/events/templates/reviews/forms.html
 msgid "Rating this question is mandatory"
-msgstr "Оценка этого вопроса обязательна"
+msgstr ""
 
 #: indico/modules/events/papers/client/js/components/GroupReviewForm.jsx
 msgid "Reviewing in {group}"
@@ -2634,7 +2632,7 @@ msgstr "· оценка {prettyScore}"
 
 #: indico/modules/events/papers/client/js/components/RevisionReview.jsx
 msgid "Score: {score} / {maxScore}"
-msgstr "Оценка: {score} / {maxScore}"
+msgstr ""
 
 #: indico/modules/events/papers/client/js/components/RevisionReview.jsx
 #: indico/modules/events/templates/reviews/timeline.html
@@ -2653,7 +2651,7 @@ msgstr "Редактировать отзыв"
 
 #: indico/modules/events/papers/client/js/components/TimelineItem.jsx
 msgid "A user"
-msgstr "Пользователь"
+msgstr ""
 
 #: indico/modules/events/papers/client/js/components/TimelineItem.jsx
 msgid "{submitterName} submitted paper revision {revisionNumber}"
@@ -2669,7 +2667,7 @@ msgstr "Показать старую редакцию"
 
 #: indico/modules/events/persons/client/js/AuthorsList.jsx
 msgid "There are no persons associated with the selected contributions"
-msgstr "Нет людей, связанных с выбранными докладами"
+msgstr ""
 
 #: indico/modules/events/persons/client/js/AuthorsList.jsx
 msgid ""
@@ -2719,7 +2717,7 @@ msgstr "Этот автор отправил тезисы."
 
 #: indico/modules/events/persons/client/js/AuthorsList.jsx
 msgid "This person hasn't submitted any abstracts"
-msgstr "Этот человек не отправлял тезисы"
+msgstr ""
 
 #: indico/modules/events/persons/client/js/AuthorsList.jsx
 #: indico/modules/events/persons/client/js/AuthorsListButton.jsx
@@ -2846,9 +2844,9 @@ msgstr "Копировать в буфер обмена"
 #: indico/modules/events/persons/client/js/EmailDialog.jsx
 msgid "Your email has been sent."
 msgid_plural "Your emails have been sent."
-msgstr[0] "Ваше письмо отправлено."
-msgstr[1] "Ваши письма отправлены."
-msgstr[2] "Ваши письма отправлены."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/events/persons/client/js/EmailDialog.jsx
@@ -3073,18 +3071,18 @@ msgstr "Показать отображение для незарегистри�
 #: indico/modules/events/registration/client/js/components/participant-list/ParticipantSharedTranslations.tsx
 msgid "{count} participant registered anonymously."
 msgid_plural "{count} participants registered anonymously."
-msgstr[0] "{count} участник зарегистрировался анонимно."
-msgstr[1] "{count} участника зарегистрировались анонимно."
-msgstr[2] "{count} участников зарегистрировались анонимно."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/events/registration/client/js/components/participant-list/ParticipantTable.tsx
 msgid "Check-in status"
-msgstr "Статус регистрации"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/components/participant-list/ParticipantTable.tsx
 msgid "No participants registered."
-msgstr "Нет зарегистрированных участников."
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/FormErrorList.jsx
 #: indico/modules/events/registration/forms.py
@@ -3099,33 +3097,31 @@ msgstr "Список участников"
 
 #: indico/modules/events/registration/client/js/form/FormErrorList.jsx
 msgid "You need to review some of the fields"
-msgstr "Вам нужно проверить некоторые поля"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/FormErrorList.jsx
 msgid "Fields with errors"
-msgstr "Поля с ошибками"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/FormErrorList.jsx
 msgid "Visit incomplete field {field}: {error}"
-msgstr "Посетите незаполненное поле {field}: {error}"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/FormItem.jsx
 msgid "This field is locked since changing it could trigger a price change."
 msgstr ""
-"Это поле заблокировано, так как его изменение может привести к изменению "
-"цены."
 
 #: indico/modules/events/registration/client/js/form/FormItem.jsx
 msgid "As a manager you can modify it nonetheless."
-msgstr "Как менеджер, вы можете изменить его, тем не менее."
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/FormItem.jsx
 msgid "This field is locked due to an expired retention period."
-msgstr "Это поле заблокировано из-за истекшего срока хранения."
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/FormItem.jsx
 msgid "The associated registration data has been deleted."
-msgstr "Связанные данные регистрации были удалены."
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/FormItem.jsx
 msgid ""
@@ -3133,14 +3129,8 @@ msgid ""
 msgid_plural ""
 "Field data will be purged {retentionPeriod} weeks after the event ended."
 msgstr[0] ""
-"Данные поля будут удалены через {retentionPeriod} неделю после окончания "
-"мероприятия."
 msgstr[1] ""
-"Данные поля будут удалены через {retentionPeriod} недели после окончания "
-"мероприятия."
 msgstr[2] ""
-"Данные поля будут удалены через {retentionPeriod} недель после окончания "
-"мероприятия."
 msgstr[3] ""
 
 #: indico/modules/events/registration/client/js/form/FormSection.jsx
@@ -3149,7 +3139,7 @@ msgstr "Этот раздел виден только менеджерам."
 
 #: indico/modules/events/registration/client/js/form/FormSection.jsx
 msgid "Disabled fields"
-msgstr "Отключённые поля"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/FormSection.jsx
 msgid "These fields won't be displayed to registrants"
@@ -3157,11 +3147,11 @@ msgstr "Эти поля не будут отображаться у зареги
 
 #: indico/modules/events/registration/client/js/form/fields/AccommodationInput.jsx
 msgid "{price} per night"
-msgstr "{price} за ночь"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/AccommodationInput.jsx
 msgid "Pick the arrival and departure dates"
-msgstr "Выберите даты прибытия и отъезда"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/AccommodationInput.jsx
 msgid "Arrival"
@@ -3183,15 +3173,15 @@ msgstr "Вы должны выбрать один из вариантов"
 
 #: indico/modules/events/registration/client/js/form/fields/AccommodationInput.jsx
 msgid "You must select the arrival and departure date"
-msgstr "Вы должны выбрать дату прибытия и дату отъезда"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/AccommodationInput.jsx
 msgid "The departure period cannot begin before the arrival period."
-msgstr "Период отъезда не может начинаться раньше периода прибытия."
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/AccommodationInput.jsx
 msgid "The arrival period cannot end after the departure period."
-msgstr "Период прибытия не может заканчиваться позже периода отъезда."
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/AccommodationInput.jsx
 #: indico/modules/events/registration/client/js/form/fields/MultiChoiceInput.jsx
@@ -3201,7 +3191,7 @@ msgstr "Выбор"
 
 #: indico/modules/events/registration/client/js/form/fields/AccommodationInput.jsx
 msgid "You need to have at least one enabled option."
-msgstr "У вас должна быть как минимум одна включённая опция."
+msgstr ""
 
 #: indico/modules/designer/placeholders.py
 #: indico/modules/events/registration/client/js/form/fields/AccompanyingPersonsInput.jsx
@@ -3224,7 +3214,7 @@ msgstr "Сопровождающие лица не зарегистрирова�
 
 #: indico/modules/events/registration/client/js/form/fields/AccompanyingPersonsInput.jsx
 msgid "Edit this person"
-msgstr "Редактировать этого человека"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/AccompanyingPersonsInput.jsx
 msgid "Remove this person"
@@ -3240,14 +3230,14 @@ msgstr "Редактировать сопровождающее лицо"
 
 #: indico/modules/events/registration/client/js/form/fields/AccompanyingPersonsInput.jsx
 msgid "Maximum per registrant"
-msgstr "Максимум на одного регистранта"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/AccompanyingPersonsInput.jsx
 #: indico/modules/events/registration/client/js/form/fields/NumberInput.jsx
 #: indico/modules/events/registration/client/js/form/fields/TextInput.jsx
 #: indico/modules/events/registration/client/js/form/fields/TimetableSessions.jsx
 msgid "No maximum"
-msgstr "Без максимума"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/AccompanyingPersonsInput.jsx
 msgid "Accompanying persons count against registration limit"
@@ -3284,24 +3274,20 @@ msgid ""
 "The currently chosen option has been modified. If you unselect it you may "
 "not be able to select it again for the same price."
 msgstr ""
-"Выбранная опция была изменена. Если вы отмените ее выбор, вы не сможете "
-"выбрать ее снова по той же цене."
 
 #: indico/modules/events/registration/client/js/form/fields/ChoiceLabel.jsx
 msgid ""
 "The currently chosen option has been modified. If you unselect it you may "
 "not be able to select it again."
 msgstr ""
-"Выбранная опция была изменена. Если вы отмените ее выбор, вы не сможете "
-"выбрать ее снова."
 
 #: indico/modules/events/registration/client/js/form/fields/ChoiceLabel.jsx
 msgid "This option could trigger a price change and has been blocked."
-msgstr "Эта опция может вызвать изменение цены и была заблокирована."
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/ChoiceLabel.jsx
 msgid "Choosing this option will result in a price change."
-msgstr "Выбор этой опции приведет к изменению цены."
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/ChoicesSetup.jsx
 msgid "Caption"
@@ -3321,16 +3307,16 @@ msgstr "Макс. дополнительных слотов"
 
 #: indico/modules/events/registration/client/js/form/fields/ChoicesSetup.jsx
 msgid "All prices are per night"
-msgstr "Все цены указаны за ночь"
+msgstr ""
 
 #: indico/modules/designer/placeholders.py
 #: indico/modules/events/registration/client/js/form/fields/ChoicesSetup.jsx
 msgid "No accommodation"
-msgstr "Размещение не предусмотрено"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/ChoicesSetup.jsx
 msgid "Extra slots pay"
-msgstr "Дополнительные места платные"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/ChoicesSetup.jsx
 #: indico/web/client/js/react/components/WTFLinkListField.jsx
@@ -3343,15 +3329,15 @@ msgstr "Отключить"
 
 #: indico/modules/events/registration/client/js/form/fields/ChoicesSetup.jsx
 msgid "Enable choice"
-msgstr "Включить выбор"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/CountryInput.jsx
 msgid "Default to affiliation country"
-msgstr "По умолчанию страна организации"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/DateInput.jsx
 msgid "The provided date is invalid."
-msgstr "Указана неверная дата."
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/DateInput.jsx
 msgid "12 hours"
@@ -3394,11 +3380,11 @@ msgstr "Этот адрес электронной почты не связан 
 
 #: indico/modules/events/registration/client/js/form/fields/EmailInput.jsx
 msgid "The registration will be re-associated to a different user ({name})."
-msgstr "Регистрация будет переназначена другому пользователю ({name})."
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/EmailInput.jsx
 msgid "The registration will be disassociated from the current user ({name})."
-msgstr "Регистрация будет отвязана от текущего пользователя ({name})."
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/EmailInput.jsx
 #: indico/web/client/js/react/components/PersonDetailsModal.jsx
@@ -3421,7 +3407,7 @@ msgstr "Регистрация будет связана с Вашей учет�
 #: indico/modules/events/registration/client/js/form/fields/EmailInput.jsx
 msgid ""
 "The registration will remain associated with the Indico account {name}."
-msgstr "Регистрация останется связанной с учётной записью Indico {name}."
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/EmailInput.jsx
 msgid "The registration will be associated with the Indico account {name}."
@@ -3436,21 +3422,19 @@ msgstr "Это поле должно быть заполнено"
 #: indico/modules/events/registration/client/js/form/fields/MultiChoiceInput.jsx
 msgid "At most {n} option can be selected"
 msgid_plural "At most {n} options can be selected"
-msgstr[0] "Можно выбрать не более {n} варианта"
-msgstr[1] "Можно выбрать не более {n} вариантов"
-msgstr[2] "Можно выбрать не более {n} вариантов"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/events/registration/client/js/form/fields/MultiChoiceInput.jsx
 #: indico/modules/events/registration/client/js/form/fields/TimetableSessions.jsx
 msgid "Maximum number of choices"
-msgstr "Максимальное количество вариантов выбора"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/MultiChoiceInput.jsx
 msgid "Maximum number of choices that can be selected. Leave empty to unset."
 msgstr ""
-"Максимальное количество вариантов, которые можно выбрать. Оставьте пустым, "
-"чтобы отменить."
 
 #: indico/modules/events/registration/client/js/form/fields/MultiChoiceInput.jsx
 #: indico/modules/events/registration/client/js/form/fields/SingleChoiceInput.jsx
@@ -3468,19 +3452,17 @@ msgstr "Максимум"
 #: indico/modules/events/registration/client/js/form/fields/NumberInput.jsx
 #: indico/modules/events/registration/client/js/form/fields/TimetableSessions.jsx
 msgid "The minimum value cannot be greater than the maximum value."
-msgstr "Минимальное значение не может быть больше максимального."
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/PictureInput.jsx
 msgid "Minimum picture size"
-msgstr "Минимальный размер изображения"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/PictureInput.jsx
 msgid ""
 "Minimum picture size that can be uploaded in pixels. Leave empty for no min "
 "size validation."
 msgstr ""
-"Минимальный размер изображения, которое можно загрузить, в пикселях. "
-"Оставьте пустым, если проверка минимального размера не требуется."
 
 #: indico/modules/events/registration/client/js/form/fields/PlacesLeftLabel.jsx
 msgid "{count} place left"
@@ -3496,7 +3478,7 @@ msgstr "Мест не осталось"
 
 #: indico/modules/events/registration/client/js/form/fields/SingleChoiceInput.jsx
 msgid "Select extra slots"
-msgstr "Выберите дополнительные слоты"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/SingleChoiceInput.jsx
 msgid "Widget type"
@@ -3544,25 +3526,25 @@ msgstr "Минимальная длина не может быть больше 
 #: indico/modules/events/registration/client/js/form/fields/TimetableSessions.jsx
 msgid "{selectedBlocks} block selected)"
 msgid_plural "{selectedBlocks} blocks selected)"
-msgstr[0] "{selectedBlocks} блок выбран)"
-msgstr[1] "{selectedBlocks} блока выбрано)"
-msgstr[2] "{selectedBlocks} блоков выбрано)"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/events/registration/client/js/form/fields/TimetableSessions.jsx
 msgid "Please select at least {minimum} session block"
 msgid_plural "Please select at least {minimum} session blocks"
-msgstr[0] "Пожалуйста, выберите как минимум {minimum} блок сессии"
-msgstr[1] "Пожалуйста, выберите как минимум {minimum} блока сессии"
-msgstr[2] "Пожалуйста, выберите как минимум {minimum} блоков сессии"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/events/registration/client/js/form/fields/TimetableSessions.jsx
 msgid "Please select no more than {maximum} session block"
 msgid_plural "Please select no more than {maximum} session blocks"
-msgstr[0] "Пожалуйста, выберите не более {maximum} блока сессии"
-msgstr[1] "Пожалуйста, выберите не более {maximum} блоков сессии"
-msgstr[2] "Пожалуйста, выберите не более {maximum} блоков сессии"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
 msgstr[3] ""
 
 #: indico/modules/events/registration/client/js/form/fields/TimetableSessions.jsx
@@ -3571,11 +3553,11 @@ msgstr "Выбрать дни"
 
 #: indico/modules/events/registration/client/js/form/fields/TimetableSessions.jsx
 msgid "Minimum number of choices"
-msgstr "Минимальное количество вариантов выбора"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/TimetableSessions.jsx
 msgid "No minimum"
-msgstr "Нет минимума"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form/fields/registry.js
 msgid "Text field"
@@ -3679,11 +3661,11 @@ msgstr "Вы уверены, что хотите удалить раздел \"{
 #: indico/modules/events/registration/client/js/form_setup/RegistrationFormSetup.jsx
 #: indico/modules/events/registration/templates/management/reglist_filter.html
 msgid "Disabled sections"
-msgstr "Отключенные разделы"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form_setup/DisabledSectionsModal.jsx
 msgid "There are no disabled sections."
-msgstr "Нет отключенных разделов."
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form_setup/FormItemSetupActions.jsx
 msgid "Remove field"
@@ -3695,7 +3677,7 @@ msgstr "Включить поле"
 
 #: indico/modules/events/registration/client/js/form_setup/FormItemSetupActions.jsx
 msgid "Disable field"
-msgstr "Отключить поле"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form_setup/FormItemSetupActions.jsx
 msgid "Configure field"
@@ -3703,7 +3685,7 @@ msgstr "Настроить поле"
 
 #: indico/modules/events/registration/client/js/form_setup/FormItemSetupActions.jsx
 msgid "Are you sure you want to delete the field \"{field}\"?"
-msgstr "Вы уверены, что хотите удалить поле \"{field}\"?"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form_setup/FormSectionSetupActions.jsx
 msgid "Disable section"
@@ -3724,7 +3706,7 @@ msgstr "Добавить новое поле"
 
 #: indico/modules/events/registration/client/js/form_setup/ItemSettingsModal.jsx
 msgid "Please choose a field type."
-msgstr "Пожалуйста, выберите тип поля."
+msgstr ""
 
 #: indico/modules/attachments/forms.py indico/modules/categories/forms.py
 #: indico/modules/events/contributions/contrib_fields.py
@@ -3799,12 +3781,10 @@ msgid ""
 "Please note that invoice information will be lost as well once a field's "
 "retention period expires."
 msgstr ""
-"Пожалуйста, обратите внимание, что информация о счетах также будет утеряна "
-"по истечении срока хранения поля."
 
 #: indico/modules/events/registration/client/js/form_setup/ItemTypeDropdown.jsx
 msgid "Choose type"
-msgstr "Выберите тип"
+msgstr ""
 
 #: indico/modules/events/registration/client/js/form_setup/ItemTypeDropdown.jsx
 msgid "Add field"
@@ -3874,7 +3854,7 @@ msgstr "Регистрация"
 
 #: indico/modules/events/sessions/client/js/session_display.jsx
 msgid "Detailed timetable"
-msgstr "Подробное расписание"
+msgstr ""
 
 #: indico/modules/events/surveys/client/js/EmailSurveyParticipants.jsx
 msgid "Recipients addresses"
@@ -3911,17 +3891,17 @@ msgstr "Показать"
 #: indico/modules/logs/client/js/components/LogEntryList.jsx
 #: indico/modules/logs/templates/entry_email.html
 msgid "This email is pending and will be sent soon."
-msgstr "Это письмо ожидает отправки и будет отправлено в ближайшее время."
+msgstr ""
 
 #: indico/modules/logs/client/js/components/LogEntryList.jsx
 #: indico/modules/logs/templates/entry_email.html
 msgid "This email has been sent."
-msgstr "Это письмо было отправлено."
+msgstr ""
 
 #: indico/modules/logs/client/js/components/LogEntryList.jsx
 #: indico/modules/logs/templates/entry_email.html
 msgid "Sending this email failed."
-msgstr "Не удалось отправить это письмо."
+msgstr ""
 
 #: indico/modules/events/management/templates/clone_event.html
 #: indico/modules/events/management/templates/import_event.html
@@ -3959,20 +3939,18 @@ msgid ""
 "There is more than one booking request during this time. Accepting this "
 "booking will automatically reject the following:"
 msgstr ""
-"На это время приходится несколько запросов на бронирование. Принятие этого "
-"бронирования автоматически отклонит следующие:"
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "Close without accepting"
-msgstr "Закрыть без подтверждения"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "Accept anyway"
-msgstr "Принять в любом случае"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "There is no occurrence on this date ({date})."
-msgstr "На эту дату ({date}) нет повторений."
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "Cancellation not possible"
@@ -3980,36 +3958,36 @@ msgstr "Отмена невозможна"
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "The occurrence you chose ({date}) cannot be cancelled."
-msgstr "Выбранное вами повторение ({date}) не может быть отменено."
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 #: indico/modules/rb/client/js/common/timeline/RowActionsDropdown.jsx
 msgid "Confirm cancellation"
-msgstr "Подтвердить отмену"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "Are you sure you want to cancel this occurrence ({date})?"
-msgstr "Вы уверены, что хотите отменить это повторение ({date})?"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "Cancel this occurrence"
-msgstr "Отменить это повторение"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "Booking reason"
-msgstr "Причина бронирования"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "Internal notes"
-msgstr "Внутренние заметки"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "{date} - {info} by {user}"
-msgstr "{date} - {info} от {user}"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "Booking history"
-msgstr "История бронирования"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "The booking has been successfully split"
@@ -4018,12 +3996,10 @@ msgstr "Бронирование было успешно разделено"
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "You can consult your new booking {link}here{/link}."
 msgstr ""
-"Вы можете посмотреть информацию о вашем новом бронировании "
-"{link}здесь{/link}."
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "Operation failed"
-msgstr "Операция не удалась"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "Pending Confirmation"
@@ -4031,7 +4007,7 @@ msgstr "Требуется подтверждение"
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "This booking is subject to acceptance by the room owner"
-msgstr "Для этого бронирования требуется подтверждение от владельца помещения"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 #: indico/modules/rb/client/js/common/timeline/TimelineItem.jsx
@@ -4040,12 +4016,12 @@ msgstr "Отменен"
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "The booking was cancelled."
-msgstr "Бронирование было отменено."
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 #: indico/modules/rb/client/js/modules/blockings/BlockingModal.jsx
 msgid "Reason: {rejectionReason}"
-msgstr "Причина: {rejectionReason}"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "The booking was rejected."
@@ -4053,11 +4029,11 @@ msgstr "Бронирование отклонено."
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "The booking was accepted"
-msgstr "Бронирование было принято"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "Are you sure you want to delete this booking?"
-msgstr "Вы уверены, что хотите удалить это бронирование?"
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "Reject booking"
@@ -4065,16 +4041,15 @@ msgstr "Отклонить бронирование"
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "I understand that this will reject all occurrences of the booking."
-msgstr "Я понимаю, что это отклонит все экземпляры бронирования."
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "Please confirm rejecting the booking."
-msgstr "Пожалуйста, подтвердите отклонение бронирования."
+msgstr ""
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "You can provide an optional message when accepting this booking"
 msgstr ""
-"Вы можете добавить необязательное сообщение при принятии этого бронирования"
 
 #: indico/modules/rb/client/js/common/bookings/BookingDetails.jsx
 msgid "Cancel booking"

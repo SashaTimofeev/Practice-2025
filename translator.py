@@ -1,7 +1,11 @@
+# translator.py
+
 import os
 import google.generativeai as genai
 import logging
-from typing import Optional
+import json
+import time
+from typing import List, Dict, Any, Optional
 
 logger = logging.getLogger(__name__)
 
@@ -13,154 +17,139 @@ class GeminiTranslator:
             raise ValueError("GOOGLE_API_KEY не найден в переменных окружения")
             
         genai.configure(api_key=api_key)
-        # Используем gemini-1.5-flash как указано в требованиях
-        self.model = genai.GenerativeModel('gemini-2.0-flash')
+        self.model = genai.GenerativeModel('gemini-2.0-flash') 
         self.max_retries = 3
-        self.retry_delay = 2  # секунды
-        
-        # Промпт для перевода
-        self.translation_prompt = """
-        Ты профессиональный переводчик с английского на русский для программного обеспечения Indico.
-        Indico - это инструмент с открытым исходным кодом для организации мероприятий, архивирования и совместной работы.
-        
-        Основные особенности Indico:
-        - Рабочий процесс организации мероприятий, подходящий для лекций, встреч, семинаров и конференций
-        - Многоуровневая система защиты на основе древовидной структуры
-        - Простая загрузка и извлечение презентаций, статей и других документов
-        - Постоянное архивирование всех материалов и метаданных мероприятия
-        - Функции рецензирования для статей конференции
-        - Полное покрытие жизненного цикла конференции
-        - Бронирование и управление помещениями
-        - Интеграция с несколькими инструментами для совместной работы
-        
-        Правила, которыми ты должен руководствоваться при переводе текста на русский язык:
-        - Сохраняй технические термины и названия без изменений, если они не имеют устоявшегося перевода.
-        - Сохраняй регистр и форматирование исходного текста.
-        - Если текст содержит плейсхолдеры в формате %s, {var}, $var или {{var}}, не изменяй их.
-        - Не оборачивай переведенный текст в кавычки
-        - Не пиши в начале переведенной строки её номер
-        
-        Текст для перевода:
-        """
+        self.retry_delay = 5  # секунды
+        self.BATCH_SIZE = 10  
 
-    # Константы для пакетной обработки
-    BATCH_SIZE = 10  # Количество строк для перевода в одном запросе
-    
-    def _clean_translation(self, translated_text: str) -> str:
-        """Очищает переведенный текст от лишних символов"""
-        if not translated_text:
-            return ""
-            
-        # Удаляем кавычки, если они есть
-        text = translated_text.strip()
-        if (text.startswith('"') and text.endswith('"')) or \
-           (text.startswith("'") and text.endswith("'")):
-            text = text[1:-1]
-            
-        return text
-    
-    def _create_batch_prompt(self, texts: list[str]) -> str:
-        """Создает промпт для пакетного перевода"""
-        prompt = self.translation_prompt + "\n\n"
-        prompt += "Переведите следующие строки, разделяя переводы пустой строкой. Сохраняйте порядок:\n\n"
+    def _create_batch_prompt(self, entries: List[Dict[str, Any]]) -> str:
+        """Создает промпт для пакетного перевода с инструкцией вывода в JSON."""
+        prompt = """
+You are a professional software translator from English to Russian for an open-source event management tool called Indico.
+
+Translate the following list of texts. Follow these rules STRICTLY:
+1.  Preserve technical terms and placeholders like `%s`, `{var}`, `$var`, `%(name)s`.
+2.  Maintain the original case and formatting where appropriate for the context.
+3.  Your entire response MUST be a valid JSON array `[...]` containing one JSON object for each input text, in the same order. Do not output anything before or after the JSON array.
+
+For each text, generate a JSON object with a "type" field and a "translation" field.
+
+- If the text is a simple string, the JSON object should be:
+  {"type": "simple", "translation": "your_russian_translation"}
+
+- If the text has plural forms (marked with [PLURAL]), the JSON object must include all four Russian plural forms:
+  {"type": "plural", "translation": {"one": "форма для 1", "few": "форма для 2-4", "many": "форма для 5+", "other": "общая форма"}}
+
+Example Input:
+[
+  {"id": 1, "type": "simple", "text": "Upload BoA"},
+  {"id": 2, "type": "plural", "text": {"msgid": "one file", "msgid_plural": "%(num)d files"}}
+]
+
+Example Output for the above input:
+[
+  {"id": 1, "type": "simple", "translation": "Загрузить BoA"},
+  {"id": 2, "type": "plural", "translation": {"one": "один файл", "few": "%(num)d файла", "many": "%(num)d файлов", "other": "%(num)d файл(ов)"}}
+]
+
+Now, translate the following texts:
+"""
         
-        for i, text in enumerate(texts, 1):
-            prompt += f"{i}. {text}\n"
-            
+        # Подготавливаем входные данные в формате JSON для промпта
+        input_data = []
+        for i, entry in enumerate(entries):
+            if isinstance(entry, dict) and 'msgid_plural' in entry:
+                input_data.append({
+                    "id": i,
+                    "type": "plural",
+                    "text": {
+                        "msgid": entry['msgid'],
+                        "msgid_plural": entry['msgid_plural']
+                    }
+                })
+            else:
+                text = entry if isinstance(entry, str) else entry['msgid']
+                input_data.append({
+                    "id": i,
+                    "type": "simple",
+                    "text": text
+                })
+
+        prompt += json.dumps(input_data, indent=2, ensure_ascii=False)
         return prompt
-    
-    def _parse_retry_delay(self, error_msg: str) -> int:
-        """Извлекает время задержки из сообщения об ошибке API"""
-        try:
-            # Пытаемся найти retry_delay в сообщении об ошибке
-            import re
-            match = re.search(r'retry_delay\s*{\s*seconds\s*:\s*(\d+)', error_msg)
-            if match:
-                return int(match.group(1)) + 5  # Добавляем 5 секунд на всякий случай
-        except Exception as e:
-            logger.warning(f"Не удалось распознать время задержки: {str(e)}")
-        
-        # Возвращаем задержку по умолчанию, если не удалось распознать
-        return self.retry_delay * (2 ** 2)  # 8 секунд по умолчанию
-    
-    def _handle_api_error(self, error, attempt: int) -> bool:
-        """Обрабатывает ошибку API и возвращает True, если нужно повторить запрос"""
-        error_msg = str(error)
-        
-        # Проверяем, не превышен ли лимит запросов
-        if "429" in error_msg or "quota" in error_msg.lower() or "rate limit" in error_msg.lower():
-            delay = self._parse_retry_delay(error_msg)
-            logger.warning(f"Превышен лимит запросов. Ждем {delay} секунд перед повторной попыткой...")
-            import time
-            time.sleep(delay)
-            return True
-            
-        # Для других ошибок используем экспоненциальную задержку
-        delay = self.retry_delay * (2 ** attempt)
-        logger.warning(f"Ошибка API (попытка {attempt + 1}/{self.max_retries}). Ждем {delay} секунд...")
-        import time
-        time.sleep(delay)
-        return True
-    
-    def translate_batch(self, texts: list[str]) -> list[Optional[str]]:
-        """
-        Переводит пакет строк с английского на русский с помощью Gemini API
-        
-        Args:
-            texts: Список текстов для перевода
-            
-        Returns:
-            list: Список переведенных текстов или None для неудачных переводов
-        """
-        if not texts:
+
+    def translate_batch(self, entries: list) -> List[Optional[Dict]]:
+        """Переводит пакет строк, ожидая ответ в формате JSON."""
+        if not entries:
             return []
             
-        prompt = self._create_batch_prompt(texts)
+        prompt = self._create_batch_prompt(entries)
+        logger.debug(f"Отправка запроса на перевод (всего {len(entries)} записей).")
         
         for attempt in range(self.max_retries):
             try:
-                response = self.model.generate_content(prompt)
+                # Используем JSON режим, если модель его поддерживает
+                generation_config = {
+                    "response_mime_type": "application/json",
+                }
+                response = self.model.generate_content(prompt, generation_config=generation_config)
                 
-                if not response.text:
-                    raise ValueError("Пустой ответ от API")
+                # Парсим JSON ответ
+                response_json = json.loads(response.text)
                 
-                # Разбиваем ответ на отдельные переводы
-                translations = [self._clean_translation(t) for t in response.text.split('\n\n')]
+                if not isinstance(response_json, list) or len(response_json) != len(entries):
+                    logger.warning(f"Ответ API не соответствует ожидаемому формату. Получено {len(response_json)}/{len(entries)} записей.")
+                    # Попробуем еще раз, возможно, временный сбой
+                    if attempt < self.max_retries - 1:
+                        time.sleep(self.retry_delay * (attempt + 1))
+                        continue
+                    return [None] * len(entries)
+
+                results = []
+                for res_item in response_json:
+                    res_type = res_item.get('type')
+                    translation = res_item.get('translation')
+
+                    if res_type == 'simple' and isinstance(translation, str):
+                        results.append({'type': 'simple', 'text': translation})
+                    elif res_type == 'plural' and isinstance(translation, dict):
+                        results.append({'type': 'plural', 'forms': translation})
+                    else:
+                        logger.warning(f"Некорректный элемент в ответе JSON: {res_item}")
+                        results.append(None)
                 
-                # Проверяем, что получили столько же переводов, сколько запрашивали
-                if len(translations) != len(texts):
-                    logger.warning(f"Количество переводов ({len(translations)}) не совпадает с количеством запросов ({len(texts)})."
-                                 f" Ответ: {response.text[:200]}...")
-                    # Возвращаем None для всех переводов в пакете в случае несоответствия
-                    return [None] * len(texts)
-                
-                logger.debug(f"Успешно переведено {len(translations)} строк")
-                return translations
-                
-            except Exception as e:
-                logger.warning(f"Ошибка при переводе пакета (попытка {attempt + 1}/{self.max_retries}): {str(e)}")
-                
+                logger.info(f"Успешно переведено и обработано {len(results)} строк.")
+                return results
+
+            except json.JSONDecodeError as e:
+                logger.error(f"Ошибка декодирования JSON ответа API: {e}\nОтвет: {response.text[:500]}")
                 if attempt == self.max_retries - 1:
-                    logger.error(f"Не удалось перевести пакет после {self.max_retries} попыток")
-                    return [None] * len(texts)
-                
-                # Обрабатываем ошибку и решаем, нужно ли повторять запрос
-                if not self._handle_api_error(e, attempt):
-                    return [None] * len(texts)
-    
-    def translate(self, text: str) -> Optional[str]:
-        """
-        Переводит одну строку текста с английского на русский с помощью Gemini API
+                    return [None] * len(entries)
+                time.sleep(self.retry_delay)
+
+            except Exception as e:
+                logger.error(f"Ошибка при переводе пакета (попытка {attempt + 1}/{self.max_retries}): {e}")
+                if attempt == self.max_retries - 1:
+                    return [None] * len(entries)
+                time.sleep(self.retry_delay * (attempt + 1))
         
-        Args:
-            text: Текст для перевода
-            
-        Returns:
-            str: Переведенный текст или None в случае ошибки
-        """
+        return [None] * len(entries)
+
+    def translate(self, text: str) -> Optional[str]:
+        """Переводит одну строку текста."""
         if not text.strip():
             return text
             
-        # Используем пакетный перевод даже для одной строки
         result = self.translate_batch([text])
-        return result[0] if result else None
+        return result[0]['text'] if result and result[0] and result[0]['type'] == 'simple' else None
+        
+    def translate_plural(self, msgid: str, msgid_plural: str) -> Optional[dict]:
+        """Переводит строку с множественными формами."""
+        if not msgid.strip() or not msgid_plural.strip():
+            return None
+            
+        result = self.translate_batch([{'msgid': msgid, 'msgid_plural': msgid_plural}])
+        if not result or not result[0] or result[0]['type'] != 'plural':
+            return None
+            
+        return result[0]['forms']
