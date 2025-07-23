@@ -1,5 +1,0 @@
-2025-07-23 14:35:31,426 - utils.logger - INFO - Логирование инициализировано. Уровень: INFO. Файл: logs\translation_tool.log
-2025-07-23 14:35:31,447 - translation_manager - INFO - Создана резервная копия: for_translation_indico_core-messages-all_ru_RU-2_original.po
-2025-07-23 14:35:31,710 - translation_manager - INFO - Успешно загружен файл: for_translation_indico_core-messages-all_ru_RU-2.po
-2025-07-23 14:35:53,788 - __main__ - INFO - 
-Работа программы прервана пользователем
