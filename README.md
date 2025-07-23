@@ -20,7 +20,12 @@
    pip install -r requirements.txt
    ```
 
-3. Настройте окружение:
+3. Получите API ключ Gemini:
+   - Перейдите по ссылке https://aistudio.google.com/apikey
+   - Нажмите на кнопку "Create API key"
+   - Следуйте дальнейшим инструкциям на экране
+
+5. Настройте окружение:
    - Создайте файл `.env` в корневой директории
    - В .env файле укажите API ключ от Google AI Studio
    ```
