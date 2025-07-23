@@ -68,7 +68,7 @@ class TranslationManager:
         print(f"Процент перевода: {stats['percent_translated']}%\n")
 
     def get_untranslated_entries(self, po):
-        """Получаем список непереведенных записей (упрощенная логика)"""
+        """Получаем список непереведенных записей"""
         untranslated = []
         for entry in po:
             if not entry.msgid:
@@ -78,7 +78,7 @@ class TranslationManager:
                 continue
 
             is_translated = False
-            # ПРАВИЛЬНАЯ ПРОВЕРКА
+
             if entry.msgid_plural:
                 if entry.msgstr or (entry.msgstr_plural and any(entry.msgstr_plural.values())):
                     is_translated = True
@@ -101,7 +101,6 @@ class TranslationManager:
             if 'fuzzy' in entry.flags:
                 continue
 
-            # ПРАВИЛЬНАЯ ПРОВЕРКА
             if entry.msgid_plural:
                 if entry.msgstr or (entry.msgstr_plural and any(entry.msgstr_plural.values())):
                     translated += 1
@@ -126,7 +125,6 @@ class TranslationManager:
         for i, entry in enumerate(entries[:count], 1):
             print(f"{i}. [Исходный] {entry.msgid}")
             
-            # ПРАВИЛЬНАЯ ПРОВЕРКА: не hasattr, а просто if entry.msgid_plural
             if entry.msgid_plural:
                 print(f"   [Мн.число] {entry.msgid_plural}")
             print()
@@ -524,8 +522,6 @@ class TranslationManager:
             
             self.process_file(file_path)
 
-            another = input("\nХотите обработать другой файл? (y/N): ").strip().lower()
-            if another != 'y':
-                break
+            break
         
         print("\nРабота завершена.")
