@@ -1690,3 +1690,66 @@ NameError: name 'msvcrt' is not defined. Did you forget to import 'msvcrt'?
 2025-07-23 00:30:27,026 - translation_manager - INFO - Файл успешно сохранен: for_translation_indico_core-messages-all_ru_RU-2.po
 2025-07-23 00:33:32,139 - utils.logger - INFO - Логирование инициализировано. Уровень: INFO. Файл: logs\translation_tool.log
 2025-07-23 00:33:32,251 - translation_manager - INFO - Успешно загружен файл: for_translation_indico_core-messages-all_ru_RU-2.po
+2025-07-23 07:38:23,554 - utils.logger - INFO - Логирование инициализировано. Уровень: INFO. Файл: logs\translation_tool.log
+2025-07-23 07:38:23,818 - translation_manager - INFO - Успешно загружен файл: for_translation_indico_core-messages-all_ru_RU-2.po
+2025-07-23 07:40:46,180 - translator - INFO - Успешно переведено и обработано 5 строк.
+2025-07-23 07:43:54,283 - translation_manager - INFO - Создана резервная копия: backups\for_translation_indico_core-messages-all_ru_RU-2_20250723_074354.po
+2025-07-23 07:43:54,283 - translation_manager - INFO - Попытка сохранения файла: for_translation_indico_core-messages-all_ru_RU-2.po
+2025-07-23 07:43:54,605 - translation_manager - INFO - Файл успешно сохранен: for_translation_indico_core-messages-all_ru_RU-2.po
+2025-07-23 08:43:49,426 - __main__ - INFO - 
+Работа программы прервана пользователем
+2025-07-23 08:43:56,309 - utils.logger - INFO - Логирование инициализировано. Уровень: INFO. Файл: logs\translation_tool.log
+2025-07-23 08:43:56,573 - translation_manager - INFO - Успешно загружен файл: for_translation_indico_core-messages-all_ru_RU-2.po
+2025-07-23 08:44:04,400 - translator - INFO - Успешно переведено и обработано 1 строк.
+2025-07-23 08:44:13,205 - __main__ - INFO - 
+Работа программы прервана пользователем
+2025-07-23 08:44:27,034 - utils.logger - INFO - Логирование инициализировано. Уровень: INFO. Файл: logs\translation_tool.log
+2025-07-23 08:44:27,280 - translation_manager - INFO - Успешно загружен файл: for_translation_indico_core-messages-all_ru_RU-2.po
+2025-07-23 08:44:33,309 - translator - INFO - [
+  {
+    "id": 0,
+    "type": "simple",
+    "translation": "Вы уверены, что хотите разблокировать {first_name}?"
+  }
+]
+2025-07-23 08:44:33,310 - translator - INFO - Успешно переведено и обработано 1 строк.
+2025-07-23 08:44:47,456 - __main__ - INFO - 
+Работа программы прервана пользователем
+2025-07-23 08:44:58,111 - utils.logger - INFO - Логирование инициализировано. Уровень: INFO. Файл: logs\translation_tool.log
+2025-07-23 08:44:58,374 - translation_manager - INFO - Успешно загружен файл: for_translation_indico_core-messages-all_ru_RU-2.po
+2025-07-23 08:45:02,670 - translator - CRITICAL - [
+  {
+    "id": 0,
+    "type": "simple",
+    "translation": "Вы уверены, что хотите разблокировать {first_name}?"
+  }
+]
+2025-07-23 08:45:02,671 - translator - INFO - Успешно переведено и обработано 1 строк.
+2025-07-23 08:46:12,167 - __main__ - INFO - 
+Работа программы прервана пользователем
+2025-07-23 08:46:18,193 - utils.logger - INFO - Логирование инициализировано. Уровень: DEBUG. Файл: logs\translation_tool.log
+2025-07-23 08:46:18,450 - translation_manager - INFO - Успешно загружен файл: for_translation_indico_core-messages-all_ru_RU-2.po
+2025-07-23 08:46:19,993 - translator - DEBUG - Отправка запроса на перевод (всего 1 записей).
+2025-07-23 08:46:21,522 - translator - DEBUG - Ответ API: [
+  {
+    "id": 0,
+    "type": "simple",
+    "translation": "Вы уверены, что хотите разблокировать {first_name}?"
+  }
+]
+2025-07-23 08:46:21,523 - translator - INFO - Успешно переведено и обработано 1 строк.
+2025-07-23 08:46:30,839 - __main__ - INFO - 
+Работа программы прервана пользователем
+2025-07-23 08:46:37,076 - utils.logger - INFO - Логирование инициализировано. Уровень: DEBUG. Файл: logs\translation_tool.log
+2025-07-23 08:46:37,322 - translation_manager - INFO - Успешно загружен файл: for_translation_indico_core-messages-all_ru_RU-2.po
+2025-07-23 08:46:41,749 - translator - DEBUG - Отправка запроса на перевод (всего 1 записей).
+2025-07-23 08:46:43,129 - translator - INFO - Ответ API: [
+  {
+    "id": 0,
+    "type": "simple",
+    "translation": "Вы уверены, что хотите разблокировать {first_name}?"
+  }
+]
+2025-07-23 08:46:43,129 - translator - INFO - Успешно переведено и обработано 1 строк.
+2025-07-23 08:46:46,804 - __main__ - INFO - 
+Работа программы прервана пользователем

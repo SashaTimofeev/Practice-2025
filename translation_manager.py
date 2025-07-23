@@ -1,5 +1,3 @@
-# main.py (или как называется ваш файл с TranslationManager)
-
 import os
 import shutil
 import polib
@@ -61,33 +59,6 @@ class TranslationManager:
             logger.error(f"Ошибка при загрузке файла {file_path}: {e}", exc_info=True)
             return None
 
-    def get_translation_stats(self, po):
-        """Получаем статистику по переводам (исправленная логика)"""
-        # Считаем только реальные записи, а не заголовок
-        entries = [e for e in po if e.msgid]
-        total = len(entries)
-        translated = 0
-
-        for entry in entries:
-            if 'fuzzy' in entry.flags:
-                continue # 'fuzzy' переводы не считаются полностью переведенными
-
-            if hasattr(entry, 'msgid_plural') and entry.msgid_plural:
-                # Множественная запись переведена, если есть перевод для n=1 ИЛИ любой другой формы
-                if entry.msgstr or (entry.msgstr_plural and any(entry.msgstr_plural.values())):
-                    translated += 1
-            elif entry.msgstr:
-                # Обычная запись переведена, если есть перевод
-                translated += 1
-                
-        return {
-            'total': total,
-            'translated': translated,
-            'untranslated': total - translated,
-            'percent_translated': round((translated / total * 100), 2) if total > 0 else 0
-        }
-
-
     def print_stats(self, stats):
         """Выводим статистику в консоль"""
         print("\n=== Статистика переводов ===")
@@ -120,9 +91,8 @@ class TranslationManager:
         
         return untranslated
 
-    # В классе TranslationManager
     def get_translation_stats(self, po):
-        """Получаем статистику по переводам (упрощенная логика)"""
+        """Получаем статистику по переводам"""
         entries = [e for e in po if e.msgid]
         total = len(entries)
         translated = 0
@@ -271,7 +241,7 @@ class TranslationManager:
         return translated_count
 
     def save_po_file(self, po, file_path):
-        """Сохраняет PO файл (исправленная, единая версия)"""
+        """Сохраняет PO файл"""
         try:
             if os.path.exists(file_path) and not os.access(file_path, os.W_OK):
                 error_msg = f"Нет прав на запись в файл: {file_path}"
@@ -364,12 +334,10 @@ class TranslationManager:
             # Получаем выбранную запись
             selected_entry = modified_entries[entry_num - 1]
             
-            # Выводим полный текст выбранной записи
             print("\n=== Редактирование перевода ===")
             print(f"Оригинал: {selected_entry.msgid}")
             print(f"Текущий перевод: {selected_entry.msgstr}")
             
-            # Запрашиваем новый перевод
             new_translation = input("\nВведите новый перевод (или Enter для отмены): ").strip()
             if new_translation:
                 # Сохраняем оригинальное значение, если это первое изменение

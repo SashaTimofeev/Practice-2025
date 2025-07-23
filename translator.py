@@ -1,5 +1,3 @@
-# translator.py
-
 import os
 import google.generativeai as genai
 import logging
@@ -88,18 +86,17 @@ Now, translate the following texts:
         
         for attempt in range(self.max_retries):
             try:
-                # Используем JSON режим, если модель его поддерживает
+                # Используем JSON режим
                 generation_config = {
                     "response_mime_type": "application/json",
                 }
                 response = self.model.generate_content(prompt, generation_config=generation_config)
-                
+
                 # Парсим JSON ответ
                 response_json = json.loads(response.text)
                 
                 if not isinstance(response_json, list) or len(response_json) != len(entries):
                     logger.warning(f"Ответ API не соответствует ожидаемому формату. Получено {len(response_json)}/{len(entries)} записей.")
-                    # Попробуем еще раз, возможно, временный сбой
                     if attempt < self.max_retries - 1:
                         time.sleep(self.retry_delay * (attempt + 1))
                         continue

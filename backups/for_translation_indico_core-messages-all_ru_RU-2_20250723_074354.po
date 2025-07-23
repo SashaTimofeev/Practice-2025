@@ -6652,7 +6652,7 @@ msgstr "Пропуск проверок доступа"
 #: indico/modules/search/client/js/components/SearchBar.jsx
 #: indico/modules/search/client/js/components/SearchBox.jsx
 msgid "Search Indico"
-msgstr "поиск indico"
+msgstr ""
 
 #: indico/modules/search/client/js/components/SearchBar.jsx
 #: indico/modules/search/client/js/components/SearchBox.jsx
@@ -6661,11 +6661,11 @@ msgstr "Введите поисковый запрос"
 
 #: indico/modules/search/client/js/components/SearchBox.jsx
 msgid "In this category ↵"
-msgstr "В этой категории ↵"
+msgstr ""
 
 #: indico/modules/search/client/js/components/SearchBox.jsx
 msgid "All Indico ↵"
-msgstr "Весь Indico ↵"
+msgstr ""
 
 #: indico/modules/search/client/js/components/results/PersonList.jsx
 #: indico/web/client/js/legacy/libs/timetable/Draw.js
@@ -6810,11 +6810,11 @@ msgstr "Пользовательское изображение"
 
 #: indico/modules/users/client/js/UserBlock.jsx
 msgid "Unblock {first_name} {last_name}?"
-msgstr "Разблокировать {first_name} {last_name}?"
+msgstr ""
 
 #: indico/modules/users/client/js/UserBlock.jsx
 msgid "Block {first_name} {last_name}?"
-msgstr "Заблокировать {first_name} {last_name}?"
+msgstr ""
 
 #: indico/modules/users/client/js/UserBlock.jsx
 msgid "Are you sure you want to unblock {first_name}?"

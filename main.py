@@ -21,12 +21,10 @@ def main():
     logger = logging.getLogger(__name__)
     
     try:
-        # Проверяем наличие API ключа
         if not os.getenv('GOOGLE_API_KEY'):
-            logger.error("GOOGLE_API_KEY не найден в .env файле. Пожалуйста, создайте файл .env на основе .env.example")
+            logger.error("GOOGLE_API_KEY не найден в .env файле.")
             sys.exit(1)
             
-        # Запуск менеджера переводов
         manager = TranslationManager()
         manager.run()
         
